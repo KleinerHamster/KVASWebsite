@@ -41,6 +41,25 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
+
+input[type="email"].input-validation-error{
+    
+}
+textarea:invalid,
+input:invalid {
+    border: 2px solid red;
+}
+
+input:invalid:required,
+textarea:invalid:required {
+     border: 2px solid red;
+}
+
+input:valid,
+textarea:valid {
+    border: 2px solid black;
+}
+
 /* Стиль блока*/
 .box1 {
     background: #E0FFFF; /* Цвет фона */

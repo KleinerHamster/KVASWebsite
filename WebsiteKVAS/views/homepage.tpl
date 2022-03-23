@@ -40,9 +40,15 @@
      <p><br></p>
     <p><br></p>
 </div>
+
+
+
 <h3> Ask a Question </h3>
-<form action="/home" method="post">
-        <p><textarea rows="2" cols="50" name="QUEST" placeholder="Your question"></textarea></p> 
-        <p><input type="text" size="50" name="ADRESS" placeholder="Your email"></p>
+<form action="/homepage" method="post">
+        <p><textarea rows="2" cols="50" name="QUEST" placeholder="Your question" required oninvalid="this.setCustomValidity('Enter your question!')"
+        oninput="this.setCustomValidity('')"></textarea></p> 
+        <p><input type="email" size="50" id="email" name="email" placeholder="Your email" 
+        pattern="[a-z0-9._%+-]+@[a=z0-9.-]+\[a-z]{2,}$"  required oninvalid="this.setCustomValidity('Enter your email!')" 
+        oninput="this.setCustomValidity('Make sure you enter correct address')"></p>
         <p class="btn btn-default"><input type="submit" value="Send"></p>
 </form>
