@@ -41,23 +41,23 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-
-input[type="email"].input-validation-error{
-    
-}
+/*Стиль, для обязательного заполнения*/
 textarea:invalid,
 input:invalid {
-    border: 2px solid red;
-}
+    border: 2px solid red; /*Границы стиля*/
 
-input:invalid:required,
-textarea:invalid:required {
-     border: 2px solid red;
 }
+    /*Стиль, когда вводим неверное значение*/
+    input:invalid:required,
+    textarea:invalid:required {
+        border: 2px solid red; /*Границы стиля*/
+        color: red; /*Цвет шрифта*/
+    }
 
+/*Стиль, когда вводим в верном значение*/
 input:valid,
 textarea:valid {
-    border: 2px solid black;
+    border: 2px solid black; /*Границы стиля*/
 }
 
 /* Стиль блока*/
