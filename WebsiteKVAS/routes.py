@@ -20,7 +20,7 @@ def about():
     """Renders the about page."""
     return dict(
         title='blockchain',
-        message='Your application description page.',
+        message='',
         year=datetime.now().year
     )
 
@@ -30,7 +30,7 @@ def contact():
     """Renders the contact page."""
     return dict(
         title='thingworx',
-        message='Your contact page.',
+        message='',
         year=datetime.now().year
     )
 
@@ -40,6 +40,41 @@ def contact():
     """Renders the contact page."""
     return dict(
         title='homepage',
-        message='хуй',
+        message='',
+        year=datetime.now().year
+    )
+
+@route('/feedback')
+@view('feedback')
+def home():
+    """Renders the home page."""
+    return dict(
+        year=datetime.now().year
+    )
+
+@route('/usefulArticles')
+@view('usefulArticles')
+def about():
+    """Renders the about page."""
+    return dict(
+        title='usefulArticles',
+        year=datetime.now().year
+    )
+
+@route('/ourPartners')
+@view('ourPartners')
+def contact():
+    """Renders the contact page."""
+    return dict(
+        title='ourPartners',
+        year=datetime.now().year
+    )
+
+@route('/activeUsers')
+@view('activeUsers')
+def contact():
+    """Renders the contact page."""
+    return dict(
+        title='activeUsers',
         year=datetime.now().year
     )

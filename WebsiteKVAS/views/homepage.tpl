@@ -17,7 +17,7 @@
 <!-- второй блок ссылки на партнеров-->
 <div class="box1">
     <!-- ссылка на страницу совсеми партрами-->
-    <p16>We work with <a href="https://worldskills.org/partners/">over 150 universities and companies</a><br></p16>
+    <p16>We work with <a href="/ourPartners">over 150 universities and companies</a><br></p16>
     <p style="color:#E0FFFF">gggggg      
     <!-- делаем картинки как ссылки на некоторых партнеров-->
     <a href="https://www.imperial.ac.uk"><img src="static\images\homepage\imperalCollege.png" width="200" height="50" border="0"></a>
@@ -50,10 +50,9 @@
         oninput="this.setCustomValidity('')"></textarea></p> 
 
         <!-- добавляем текстовое поле для почты, используя паттерн-->
-        <p><input type="email" size="50" id="email" name="email" placeholder="Your email" 
-        pattern="[a-z0-9._%+-]+@[a=z0-9.-]+\[a-z]{2,}$" required minlength="5" maxlength="31" oninvalid="this.setCustomValidity('Enter your email!')" 
+        <p><input type="email" size="50" id="email" name="email" placeholder="Your email" required oninvalid="this.setCustomValidity('Enter your email!')" 
         oninput="this.setCustomValidity('')"></p>
 
         <!-- кнопка для отправки-->
-        <p class="btn btn-default"><input type="submit" value="Send"></p>
+        <p><input type="submit"  class="btn btn-default" value="Send"></p>
 </form>

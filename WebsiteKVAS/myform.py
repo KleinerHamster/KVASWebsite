@@ -33,4 +33,6 @@ def my_form():
     #добавляем данные в файл
     with open ('data.txt', 'w') as file:
         json.dump(data, file)
+
+
     return "Thanks! The answer will be sent to the mail %s" % email

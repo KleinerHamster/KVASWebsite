@@ -23,6 +23,12 @@
           <li><a class="navbar-brand" href="/blockchain">Blockchain</a></li><!-- кнопка-ссылка курсы blockchain -->
           <li><a class="navbar-brand" href="/thingworx">Thingworx</a></li><!-- кнопка-ссылка thingworx -->
           <li><a class="navbar-brand" href="/lastnews">Last News</a></li><!-- кнопка-ссылка новости -->
+          <li><a class="navbar-brand" href="/usefulArticles">Useful Articles</a></li><!-- кнопка-ссылка на полезные статьи -->
+          <li><a class="navbar-brand" href="/ourPartners">Our Partners</a></li><!-- кнопка-ссылка на страницу наших партнеров -->
+           <li><a class="navbar-brand" href="/activeUsers">Active Users</a></li><!-- кнопка-ссылка на страницу наших партнеров -->
+          <li><a class="navbar-brand" href="/feedback">Feedback</a></li><!-- кнопка-ссылка на страницу отзывов -->
+          
+          
         </ul>
       </div>
     </nav>
