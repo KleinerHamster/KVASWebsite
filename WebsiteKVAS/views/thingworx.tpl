@@ -7,7 +7,7 @@
         <img src = "static\images\thingworx\unnamed.jpg" width = "80" hspace = "0">
         <!--page title-->
         <pS1>
-            thingworx
+            THINGWORX
         </pS1>
     </div>
     <!--line-->

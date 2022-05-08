@@ -8,7 +8,6 @@
 
         <!--image view-->
         <img src = "static\images\lastnews\newsHeader.png" width = "600" hspace = "0">
-
         <!--title of page-->
         <firsttitleA>
             LAST NEWS
@@ -26,7 +25,7 @@
     <!--new paragraph-->
     <p>
         <!--mail address-->
-        <thirdtitleA style="font:bolt">pressa@worldskills.ru</thirdtitleA> 
+        <thirdtitleA>pressa@worldskills.ru</thirdtitleA> 
     </p>
     
     <!--line-->
@@ -41,25 +40,21 @@
         <img src = "static\images\lastnews\mynew_6.png" width = "370">
 
         <!--text of news formating-->
-        <newstextA>
+        <bodyTextS>
             Development of digital clothing and designer battles: training of the national assembly Worldskills Russia will be held at the inlegmash exhibition
-        </newstextA>
-        
-        <!--new paragraph-->
-        <p align="right">
+            <p align="right">
             <!--date of news-->
             <dateA>
                 28.02.2022
             </dateA>
-        </p>
-
-        <!--new paragraph-->
-        <p>
+            </p>
             <!--go to similar page-->
             <a class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/razrabotka-czifrovoj-odezhdyi-i-batlyi-dizajnerov-na-vyistavke-%C2%ABinlegmash%C2%BB-projdet-trenirovka-naczsbornoj-worldskills-russia.html">
                 Learn more &raquo;
             </a>
-        </p>
+            <!--new paragraph-->
+            <p><br></p>
+        </bodyTextS>
     </newsonthesidesA>
 
     <!--second  news-->
@@ -68,10 +63,8 @@
         <img src = "static\images\lastnews\mynew_2.png" width = "367">
 
         <!--text of news formating-->
-        <newstextA>
+        <bodyTextS>
             The WorldSkills hi-tech national championship will be held in the Sverdlovsk region for another 5 years
-        </newstextA>
-        
         <!--new paragraph-->
         <p align="right">
             <!--date of news-->
@@ -79,14 +72,10 @@
                 22.02.2022
             </dateA>
         </p>
-
-        <!--new paragraph-->
-        <p>
-            <!--go to similar page-->
-            <a class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/naczionalnyij-chempionat-worldskills-hi-tech-budet-proxodit-v-sverdlovskoj-oblasti-eshhe-5-let.html">
+        <a class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/naczionalnyij-chempionat-worldskills-hi-tech-budet-proxodit-v-sverdlovskoj-oblasti-eshhe-5-let.html">
                 Learn more &raquo;
-            </a>
-        </p>
+        </a>
+        </bodyTextS>
     </newsinthecenterA>
 
     <!--third news-->
@@ -95,9 +84,9 @@
         <img src = "static\images\lastnews\mynew_5.png" width = "353">
 
         <!--text of news formating-->
-        <newstextA>
+        <bodyTextS>
             Professional development of students and schoolchildren of the country was discussed at the career forum "Trud krut"
-        </newstextA>
+        
         
         <!--new paragraph-->
         <p align="right">
@@ -106,17 +95,13 @@
                 18.02.2022
             </dateA>
         </p>
-
-        <!--new paragraph-->
-        <p>
-            <!--go to similar page-->
-            <a class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/na-karernom-forume-%C2%ABtrud-krut%C2%BB-obsudili-professionalnoe-razvitie-studentov-i-shkolnikov-stranyi.html">
+        <a class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/na-karernom-forume-%C2%ABtrud-krut%C2%BB-obsudili-professionalnoe-razvitie-studentov-i-shkolnikov-stranyi.html">
                 Learn more &raquo;
             </a>
-        </p>
+        </bodyTextS>
     </newsonthesidesA>
 </conteinerA>
-
+<hr>
 <!--three elements of news on second line-->
 <conteinerA>
     <!--fourth news-->
@@ -125,10 +110,9 @@
         <img src = "static\images\lastnews\mynew_3.png" width = "357">
 
         <!--text of news formating-->
-        <newstextA>
+       <bodyTextS>
             Competence managers and experts of Worldskills Russia are preparing for the start of a new championship season in universities
-        </newstextA>
-        
+
         <!--new paragraph-->
         <p align="right">
             <!--date of news-->
@@ -136,14 +120,10 @@
                 17.02.2022
             </dateA>
         </p>
-
-        <!--new paragraph-->
-        <p>
-            <!--go to similar page-->
-            <a class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/menedzheryi-kompetenczij-i-ekspertyi-vorldskills-rossiya-gotovyatsya-k-startu-novogo-chempionatnogo-sezona-v-vuzax.html">
+        <a class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/menedzheryi-kompetenczij-i-ekspertyi-vorldskills-rossiya-gotovyatsya-k-startu-novogo-chempionatnogo-sezona-v-vuzax.html">
                 Learn more &raquo;
             </a>
-        </p>
+        </bodyTextS>
     </newsonthesidesA>
 
     <!--fifth news-->
@@ -152,12 +132,12 @@
         <img src = "static\images\lastnews\mynew_1.png" width = "355">
 
         <!--text of news formating-->
-        <newstextA>
+        <bodyTextS>
             The 10th anniversary of the Worldskills Russia movement 
             will be celebrated in saransk at the anniversary final 
             of the national championship "young professionals" 
             (Worldskills Russia)
-        </newstextA>
+        
         
         <!--new paragraph-->
         <p align="right">
@@ -166,14 +146,11 @@
                 16.02.2022
             </dateA>
         </p>
-
-        <!--new paragraph-->
-        <p>
-            <!--go to similar page-->
-            <a class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/10-letie-dvizheniya-vorldskills-rossiya-otmetyat-v-saranske-na-yubilejnom-finale-naczionalnogo-chempionata-%C2%ABmolodyie-professionalyi%C2%BB-(worldskills-russia).html">
+        <a class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/10-letie-dvizheniya-vorldskills-rossiya-otmetyat-v-saranske-na-yubilejnom-finale-naczionalnogo-chempionata-%C2%ABmolodyie-professionalyi%C2%BB-(worldskills-russia).html">
                 Learn more &raquo;
             </a>
-        </p>
+            <p><br></p>
+        </bodyTextS>
     </newsinthecenterA>
 
     <!--sixth news-->
@@ -182,9 +159,9 @@
         <img src = "static\images\lastnews\mynew_4.png" width = "357">
 
         <!--text of news formating-->
-        <newstextA>
+        <bodyTextS>
             The boiling point of hi-tech "UEC-kuznetsov" opened in Samara
-        </newstextA>
+        
         
         <!--new paragraph-->
         <p align="right">
@@ -193,17 +170,14 @@
                 16.02.2022
             </dateA>
         </p>
-
-        <!--new paragraph-->
-        <p>
-            <!--go to similar page-->
+        <!--go to similar page-->
             <a  class="button_  btn-default" href="https://worldskills.ru/media-czentr/novosti/tochka-kipeniya-hi-tech-%C2%ABodk-kuzneczov%C2%BB-otkryilas-v-samare.html">
                 Learn more &raquo;
             </a>
-        </p>
+        </bodyTextS>
     </newsonthesidesA>
 </conteinerA>
-
+<hr>
 <!--elements in menu of page-->
 <div>
     <!--center alignment of elements-->

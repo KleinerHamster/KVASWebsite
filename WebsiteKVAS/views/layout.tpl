@@ -10,7 +10,7 @@
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
 </head>
 
-<body><!-- задний фон сайта-->
+<body ><!-- задний фон сайта-->
     <!-- отображение меню сверху и заголовка -->
     <nav class="navbar navbar-custom navbar-fixed-top">
       <div class="container-fluid">

@@ -1,6 +1,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #f0e1da;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -47,7 +48,7 @@ input:invalid {
     border: 2px solid red; /*Границы стиля*/
 
 }
-    /*Стиль, когда вводим неверное значение*/
+/*Стиль, когда вводим неверное значение*/
     input:invalid:required,
     textarea:invalid:required {
         border: 2px solid red; /*Границы стиля*/
@@ -62,7 +63,7 @@ textarea:valid {
 
 /* Стиль блока*/
 .box1 {
-    background: #E0FFFF; /* Цвет фона */
+    background: #bbb2b5; /* Цвет фона */
     padding: 10px; /* Поля */
 }
 
@@ -71,26 +72,26 @@ h12 {
     font-family: 'Georgia',Georgia, serif; /*Шрифт*/
     font-size: 48pt; /*Гегель шрифта*/
     font-weight: bold; /* Полужирный*/
-    color: #8B0000; /*Цвет шрифта*/
+    color: #954860; /*Цвет шрифта*/
 }
 /*Стиль текста p12*/
 p12 {
     font-family: 'Georgia',Georgia, serif; /*Шрифт*/
     font-size: 28pt; /*Гегель шрифта*/
-    color: #8B0000; /*Цвет шрифта*/
+    color: #954860; /*Цвет шрифта*/
 }
 /*Стиль текста p13*/
 p13 {
     font-family: 'Georgia',Georgia, serif; /*Шрифт*/
     font-size: 28pt; /*Гегель шрифта*/
-    color: #000000; /*Цвет шрифта*/
+    color: #954860; /*Цвет шрифта*/
 }
 /*Стиль текста p14*/
 p14 {
     text-align: center; /*Размещаем текст по центру*/
     font-family: 'Georgia',Georgia, serif; /*Шрифт*/
     font-size: 16pt; /*Гегель шрифта*/
-    color: #000000; /*Цвет шрифта*/
+    color: #954860; /*Цвет шрифта*/
     /*Размещение по центру*/
     display: table; /*тип отображения*/
     margin: 0 auto 0 auto; /*внешние отступы*/
@@ -100,7 +101,7 @@ p16 {
     text-align: center; /*Размещаем текст по центру*/
     font-family: 'Georgia',Georgia, serif; /*Шрифт*/
     font-size: 30px; /*Гегель шрифта*/
-    color: #000000; /*Цвет шрифта*/
+    color: #954860; /*Цвет шрифта*/
     /*Размещение по центру*/
     display: table; /*тип отображения*/
     margin: 0 auto 0 auto; /*внешние отступы*/
@@ -110,7 +111,7 @@ p15 {
     text-align: center; /*Размещаем текст по центру*/
     font-family: 'Georgia',Georgia, serif; /*Шрифт*/
     font-size: 48pt; /*Гегель шрифта*/
-    color: #8B0000; /*Цвет шрифта*/
+    color: #954860; /*Цвет шрифта*/
     font-weight: bold; /* Полужирный*/
     /*Размещение по центру*/
     display: table; /*тип отображения*/
@@ -126,7 +127,7 @@ IMG12 {
 
 /*Вид кнопки .button12*/
 .button12 {
-    background-color: #4169E1; /*Цвет кнопки*/
+    background-color: #5269ae; /*Цвет кнопки*/
     min-width: 350px; /*Минимальная ширина*/
     color: white; /*Цвет шрифта*/
     padding: 16px 56px; /*Внутрение отступы*/
@@ -141,7 +142,7 @@ IMG12 {
 
 /*Вид кнопки .button12*/
 .button13 {
-    background-color: #4169E1; /*Цвет кнопки*/
+    background-color: #5269ae; /*Цвет кнопки*/
     min-width: 250px; /*Минимальная ширина*/
     color: white; /*Цвет шрифта*/
     padding: 16px 56px; /*Внутрение отступы*/
@@ -156,12 +157,12 @@ IMG12 {
 
 /*Кастомный вид меню сверху*/
 .navbar-custom {
-    background-color: #F5F5F5; /*Цвет меню*/
+    background-color: #bbb2b5; /*Цвет меню*/
 }
     /*Дополнения к кастомному виду меню сверху*/
     .navbar-custom .navbar-brand,
     .navbar-custom .navbar-text {
-        color: #808080; /*Цвет шрифта*/
+        color: #6c6974; /*Цвет шрифта*/
         font-family: 'Georgia',Georgia, serif; /*Шрифт*/
         padding: 16px 26px; /*Внутрение отступы для текста*/
         font-size: 24px; /*Гегель шрифта*/
@@ -178,7 +179,7 @@ IMG12 {
     font-weight: 200;
     line-height: 2.1428571435;
     color: black;
-    background: rgba(204, 204, 204, 0.5);
+    background: #bbb2b5;
     /*background-color: #cbe43b;*/
 }
 
@@ -197,32 +198,37 @@ IMG12 {
 }
 /*стиль заголовка*/
 hK {
-    font-family: STENCIL;
-    color: #c50224;
+    font-family: 'Georgia', Georgia, serif; /*Шрифт*/
+    color: #954860;
     font-size: 30px;
     margin-left: 100px;
+    font-weight: bold; /* Полужирный*/
 }
-/*стиль кнопки*/
 .button_ {
     border-radius: 4px;
-    border: 1px solid #c50224;
-    color: #c50224;
-    background: white
+    border: 1px solid #E8E8E8;
+    color: white;
+    background-color: #5269ae;
+    border-color: grey; /*Цвет границы*/
+    font-family: 'Georgia', Georgia, serif; /*Шрифт*/
+    text-align: center;
 }
 
 pS1 {
     font-family: 'Georgia', Georgia, serif;
-    color: #323b42;
+    color: #954860; /*Цвет шрифта*/
     font-size: 40px;
     margin-left: 20px;
     margin-top: 10px;
+    font-weight: bold; /* Полужирный*/
 }
 
 /*for headings*/
 firstTitleS {
-    font-family: 'Acumin Pro Extra Light';
-    color: #323b42;
+    font-family: 'Georgia', Georgia, serif;
+    color: #954860;
     font-size: 30px;
+    font-weight: bold; /* Полужирный*/
     margin-top: 30px; /*the amount of the offset from the upper edge of the element*/
 }
 
@@ -230,7 +236,7 @@ firstTitleS {
 bodyTextS {
     margin-top: 10px; /*the amount of the offset from the upper edge of the element*/
     font-family: Acumin Pro Extra Light;
-    color: #323b42;
+    color: black;
     font-size: 20px;
     text-align: justify; /*text alignment by width*/
 }
@@ -244,13 +250,13 @@ hr {
 /*for buttons on the page*/
 .buttonS {
     border-radius: 5px; /*rouding a rectangular button*/
-    border-color: #c50224; /*border color*/
-    color: #c50224; /*text on the button color*/
+    border-color: #954860; /*border color*/
+    color: #954860; /*text on the button color*/
     background: white;
     text-decoration: none; /*disable link underlining*/
     width: 100%;
     text-align: center; /*text alignment by width*/
-    border: 2px solid #e34761; /*allows you to simultaneously set the thickness, style and color of the border*/
+    border: 2px solid #954860; /*allows you to simultaneously set the thickness, style and color of the border*/
     display: block; /*The element is shown as a block element.*/
     padding-bottom: 10px; /*Sets the value of the field from the bottom edge of the element content.*/
     padding-top: 10px; /*Sets the field value from the top edge of the element content.*/
@@ -258,9 +264,10 @@ hr {
 
 /*for headings */
 textHeadingsS {
-    font-family: Acumin Pro Extra Light;
-    color: #323b42;
+    font-family: 'Georgia', Georgia, serif;
+    color: #954860;
     font-size: 20px;
+    font-weight: bold; /* Полужирный*/
     margin-left: 40px; /*Sets the amount of indentation from the left edge of the element*/
     margin-top: 15px; /*Sets the amount of indentation from the top edge of the element.*/
 }
@@ -282,29 +289,30 @@ conteinerS {
 
 /*for first level headings*/
 firsttitleA {
-    font-family: STENCIL;
-    color: #c50224;
-    font-size: 30px;
-    margin-left: 350px; /*left distance*/
+    font-family: 'Georgia', Georgia, serif;
+    color: #954860;
+    font-weight: bold; /* Полужирный*/
+    font-size: 48pt;
+    margin-left: 300px; /*left distance*/
 }
 
 /*for second level headings*/
 secondtitleA {
-    font-family: STENCIL;
-    color: #c50224;
-    font-size: 20px;
+    font-family: 'Georgia', Georgia, serif;
+    color: #954860;
+    font-size: 24px;
 }
 
 /*for third level headings*/
 thirdtitleA {
-    font-family: Verdana;
-    color: #c50224;
-    font-size: 15px;
+    font-family: 'Georgia', Georgia, serif;
+    color: #954860;
+    font-size: 24px;
 }
 
 /*for separator lines in the menu at the bottom of the page*/
 menulineA {
-    color: #c50224;
+    color: #954860;
     font-size: 20px;
 }
 
@@ -330,10 +338,13 @@ newsinthecenterA {
 
 /*for dates*/
 dateA {
-    color: gray;
-    face: Verdana; /*font*/
-    size: 1;
+    margin-top: 10px; /*the amount of the offset from the upper edge of the element*/
+    font-family: Acumin Pro Extra Light;
+    color: grey;
+    font-size: 20px;
+    text-align: right
 }
+
 
 /*for all buttons on the page*/
 .buttonA {
