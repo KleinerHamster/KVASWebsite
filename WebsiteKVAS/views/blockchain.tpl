@@ -9,7 +9,7 @@
 
 <hr>
 
-<!--первый раздел-->
+<!--первыи раздел-->
 <div class="jumbotron">
 
     <img src="static\images\blockchain\bl.png" width=500 height=200> 
@@ -21,7 +21,7 @@
     
 </div>
 
-<!--второй раздел-->
+<!--второи раздел-->
 <hK> What is Blockchain Technology? </hK>
 <hr><!-- визуальный разделитель-->
 <div class="jumbotron">
