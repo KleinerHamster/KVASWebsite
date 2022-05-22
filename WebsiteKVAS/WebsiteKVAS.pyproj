@@ -31,11 +31,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="active_users_v.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app.py" />
     <Compile Include="check.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="kama1.py">
+    <Compile Include="feedback_a.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="our_partners_s.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="useful_articles_k.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="myform.py">

@@ -5,25 +5,25 @@
     <!-- добавляем текст рядом с кнопкои-->
     <hAU1>Our active users<br></hAU1>
     <!--разделитель на абзацы-->
-    <hr></hr>
-    <pAU>Let's join with us
+    <hr>
+    <pAU>Let's join with us<br></pAU>
     <!-- добавляем кнопку-->
-    <a href="#popup1" class="buttonAU">Start now</a>
-    </pAU>
+    <a href="#popup1" class="buttonAU1">Start now</a>
+    
     <!--разделитель на абзацы-->
-    <hr></hr>
+    <hr>
     <p><br></p>
     <p><br></p>
 </div>
 <!--Форма для ввода информации-->
-<form action="/" method="post">
+<form action="/activeUsers" method="post">
     <!--Первое сплывающее окно-->
     <div id="popup1" class="overlay">
 	    <div class="popup">
             <!--заговок окна-->
 		    <pAU>Information about you</pAU>
             <!--разделитель на абзацы-->
-            <hr></hr>
+            <hr>
 		    <a class="close" href="#">x</a>
 		    <div class="content">
                 <!--контейнер-->
@@ -53,7 +53,7 @@
                     <!--делим на три столбца-->
                     <separateS>
                         <!-- добавляем текстовое поле для для почты-->
-                        <bodyTextAu>Email:<br><input type="email" size="50" id="email" name="email" placeholder="Your email" required oninvalid="this.setCustomValidity('Enter your email!')" 
+                        <bodyTextAu>Phone:<br><input type="phone" size="50" id="phone" name="phone" placeholder="Your phone" required oninvalid="this.setCustomValidity('Enter your phone!')" 
                         oninput="this.setCustomValidity('')"></bodyTextAu>   
                     </separateS>
                     <!--пустой столбец-->
@@ -66,9 +66,9 @@
                     </separateS>
                 </conteinerS>
                 <!--разделитель на абзацы-->
-                <hr></hr>
+                <hr>
                 <!-- добавляем кнопку-->
-                <a href="" class="buttonAU1">Load information</a>
+                <input type="submit"  class="buttonAU1" value="Load">
                 </bodyTextAu>
 		    </div>
 	    </div>

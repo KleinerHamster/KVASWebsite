@@ -82,7 +82,7 @@ p12 {
 }
 pAU {
     font-family: 'Georgia',Georgia, serif; /*Шрифт*/
-    font-size: 28pt; /*Гегель шрифта*/
+    font-size: 48pt; /*Гегель шрифта*/
     color: #954860; /*Цвет шрифта*/
     /*Размещение по центру*/
     display: table; /*тип отображения*/
@@ -107,7 +107,7 @@ p14 {
 /* Стиль заколовка*/
 hAU1 {
     font-family: 'Georgia',Georgia, serif; /*Шрифт*/
-    font-size: 65pt; /*Гегель шрифта*/
+    font-size: 72px; /*Гегель шрифта*/
     font-weight: bold; /* Полужирный*/
     color: #954860; /*Цвет шрифта*/
     /*Размещение по центру*/
@@ -158,11 +158,11 @@ IMG12 {
 }
 .buttonAU {
     background-color: #5269ae; /*Цвет кнопки*/
-    min-width: 200px; /*Минимальная ширина*/
+    min-width: 280px; /*Минимальная ширина*/
     color: white; /*Цвет шрифта*/
     padding: 16px 56px; /*Внутрение отступы*/
     text-align: center; /*Размещаем текст по центру*/
-    font-size: 48px; /*Гегель шрифта*/
+    font-size: 32px; /*Гегель шрифта*/
     /*Оформляем кнопку в виде квадратка с мягкими углами*/
     border-radius: 8px; /*Скругление границы*/
     border: 2px solid #E8E8E8;
@@ -178,11 +178,11 @@ IMG12 {
     }
 .buttonAU1 {
     background-color: #5269ae; /*Цвет кнопки*/
-    min-width: 100px; /*Минимальная ширина*/
+    min-width: 280px; /*Минимальная ширина*/
     color: white; /*Цвет шрифта*/
     padding: 16px 56px; /*Внутрение отступы*/
     text-align: center; /*Размещаем текст по центру*/
-    font-size: 48px; /*Гегель шрифта*/
+    font-size: 32px; /*Гегель шрифта*/
     /*Оформляем кнопку в виде квадратка с мягкими углами*/
     border-radius: 8px; /*Скругление границы*/
     border: 2px solid #E8E8E8;
@@ -492,9 +492,21 @@ conteinerA {
     }
 /*for body text*/
 bodyTextAu {
-    margin-top: 10px; /*the amount of the offset from the upper edge of the element*/
+    margin-top: 14px; /*the amount of the offset from the upper edge of the element*/
     font-family: Acumin Pro Extra Light;
     color: black;
     font-size: 28px;
     text-align: justify; /*text alignment by width*/
+}
+
+/*for headings*/
+firstTitleUA1 {
+    font-family: 'Georgia', Georgia, serif;
+    color: #954860;
+    font-size: 30px;
+    font-weight: bold; /* Полужирный*/
+    margin-top: 30px; /*the amount of the offset from the upper edge of the element*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
 }
