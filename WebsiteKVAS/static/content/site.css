@@ -510,3 +510,19 @@ firstTitleUA1 {
     display: table; /*тип отображения*/
     margin: 0 auto 0 auto; /*внешние отступы*/
 }
+/*for news blocks in the center of the page*/
+newsinthecenterA {
+    width: 33.33333333333333%;
+    margin-left: 10px; /*left distance*/
+    margin-right: 10px; /*right distance*/
+}
+
+/*to place elements in blocks*/
+conteinerA {
+    display: flex; /*horizontal table*/
+}
+
+/*for news blocks on the sides of the page*/
+newsonthesidesA {
+    width: 33.33333333333333%;
+}
