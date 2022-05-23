@@ -2,6 +2,7 @@ from bottle import post, request
 import pdb 
 import json
 import re 
+import datetime
 #post - sends data to the server in a browser request
 #request - sending all types of HTTP requests
 
@@ -15,7 +16,14 @@ def my_form():
     userPhone = request.forms.get('PHONE')
     userFeedback = request.forms.get('FEEDBACK')
 
-    dataFeedback = {}
+    today = datetime.datetime.today()
+    printToday = today.strftime("%H:%M:%S %d.%m.%Y")
+
+    if(icon == ""):
+        icon = "0"
+
+    dataFeedback = []
+    dataOnce = [userPhone, userName, userSurname, userFeedback, icon, printToday]
 
     #flag for checking the presence of mail in the fail
     flag=0
@@ -26,23 +34,21 @@ def my_form():
             dataFeedback=json.load(jsonFile)
 
         #finding old mail in dictionary
-        for i in dataFeedback:
-            if userPhone in i:
-                dataFeedback[userPhone].append(userName)
-                dataFeedback[userPhone].append(userSurname)
-                dataFeedback[userPhone].append(userFeedback)
-                dataFeedback[userPhone].append(icon)
-                flag=1
+        #for i in dataFeedback:
+        #    if dataOnce in i:
+        #        dataFeedback[i] = dataOnce
+        #        flag=1
 
         #adding new mail in dictionary
-        if flag == 0: 
-            dataFeedback[userPhone] = [userName, userSurname, userFeedback, icon]
+        #if flag == 0: 
+        #    dataFeedback.append(dataOnce)
+
+        dataFeedback.append(dataOnce)
         
     except ValueError:
-            dataFeedback[userPhone] = [userName, userSurname, userFeedback, icon]
+            dataFeedback.append(dataOnce)
            
     #saving data to file
     with open('feedbackFile.json', 'w') as outfile:
         json.dump(dataFeedback, outfile)
 
-    return "<p>"+icon+"</p>"+"<p>"+userName+"</p>"+"<p>"+userSurname+"</p>"+"<p>"+userPhone+"</p>"+"<p>"+userFeedback+"</p>"

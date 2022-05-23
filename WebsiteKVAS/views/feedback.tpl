@@ -17,12 +17,18 @@ function saveIcon(iconValue){
     <pAU>Write about us<br></pAU>
     <!-- добавляем кнопку-->
     <a href="#popup1" class="buttonAU1">Write now</a>
-    
-
 </div>
-    <hr>
-    <p><br></p>
-    <p><br></p>
+
+<hr>
+<p><br></p>
+
+%import json
+%dataQuestions = []
+%with open('feedbackFile.json') as jsonFile:
+    %dataQuestions=json.load(jsonFile)
+<p>{{dataQuestions}}</p>
+
+
 <!--Форма для ввода информации-->
 <form action="/feedback" method="post">
     <!--Первое сплывающее окно-->
@@ -125,8 +131,5 @@ function saveIcon(iconValue){
     </div>
 </form>
     
-
-
-
 
 
