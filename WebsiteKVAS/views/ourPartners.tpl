@@ -42,7 +42,7 @@
                     <!--третий столбец-->
                     <separateS>
                         <!-- добавляем поле для логотипа компании-->
-                        <bodyTextAu>Link:<br><input type="text" id="link" placeholder="Your link" name="link" size="100" required oninvalid="this.setCustomValidity('Enter the link to the official website!')" 
+                        <bodyTextAu>Link:<br><input type="url" id="link" placeholder="Your link" name="link" size="100" required oninvalid="this.setCustomValidity('Enter the link to the official website!')" 
                         oninput="this.setCustomValidity('')"></bodyTextAu>   
                     </separateS>
                 </conteinerS>
@@ -90,4 +90,5 @@
     </div>
 </form>
 
+<!--таблица, содержащая информацию о компаниях-->
 {{!html}}
