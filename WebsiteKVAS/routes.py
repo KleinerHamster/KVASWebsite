@@ -76,7 +76,7 @@ def contact():
         mas=json.load(j)
     mas.reverse()
     for i in range(0,len(mas)):
-        df = df.append({'':'<img src="static\images\sofi\7imgp.jpg"/>','Company name':mas[i][1],'Description':mas[i][2],'Contact phone number':mas[i][3],
+        df = df.append({'':'<img src="static\images\curly_sue\7imgp.jpg"/>','Company name':mas[i][1],'Description':mas[i][2],'Contact phone number':mas[i][3],
                             'Learn more':mas[i][4]}, ignore_index=True)
     
            

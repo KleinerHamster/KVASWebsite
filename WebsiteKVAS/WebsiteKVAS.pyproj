@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>WebsiteKVAS</Name>
     <RootNamespace>WebsiteKVAS</RootNamespace>
-    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env5|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>64468</WebBrowserPort>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
@@ -45,6 +45,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="our_partners_s.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="static\images\our_partners\module1.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unitests\ann\PhoneFeedback.py">
@@ -144,6 +147,8 @@
     <Content Include="static\images\lastnews\mynew_5.png" />
     <Content Include="static\images\lastnews\mynew_6.png" />
     <Content Include="static\images\lastnews\newsHeader.png" />
+    <Content Include="static\images\our_partners\7imgp.jpg" />
+    <Content Include="static\images\our_partners\8imgp.jpg" />
     <Content Include="static\images\thingworx\b1.png" />
     <Content Include="static\images\thingworx\b2.png" />
     <Content Include="static\images\thingworx\b3.png" />
@@ -217,6 +222,15 @@
       <Id>env4</Id>
       <Version>3.9</Version>
       <Description>env4 (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env5\">
+      <Id>env5</Id>
+      <Version>3.9</Version>
+      <Description>env5 (Python 3.9 (64-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
