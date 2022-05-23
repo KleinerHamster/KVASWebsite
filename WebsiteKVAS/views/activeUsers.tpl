@@ -15,22 +15,6 @@
     <p><br></p>
     <p><br></p>
 </div>
-%import json
-%import random
-%dataUsers = {}
-%img=["static\images\active_users_v\1.png","static\images\active_users_v\2.png","static\images\active_users_v\3.png","static\images\active_users_v\4.png","static\images\active_users_v\5.png"]
-%with open('activeUserFile.json') as jsonFile:
-    %dataUsers=json.load(jsonFile)
-%res=dict(reversed(list(dataUsers.items())))
-%for i in range(len(res)):
-    %j=random.randint(0,4)
-    %img_num=img[j]
-    {{img_num}}
-    <div class="circular--portrait"> <img src="static\images\active_users_v\1.png" /> </div><br>
-    <hr>
-
-<p>{{res}}</p>
-
 <!--Форма для ввода информации-->
 <form action="/activeUsers" method="post">
     <!--Первое сплывающее окно-->
@@ -91,3 +75,58 @@
 	    </div>
     </div>
 </form>
+
+%import json
+%import random
+%dataUsers = {}
+%with open('activeUserFile.json') as jsonFile:
+    %dataUsers=json.load(jsonFile)
+%res=dict(reversed(list(dataUsers.items())))
+%for key in res:
+    %array=res[key]
+    %j=random.randint(0,4)
+    %if j==0:
+        <div>
+            <div class="circular--portraitV"> <img src="static\images\au\1.png"/> </div>
+            <hk>Имя: {{res[key][0]}} Lastname:{{res[key][1]}}</hk><br>
+            <pAU>Phone: {{key}}<br>
+            About yoursels: {{res[key][2]}}
+            </pAU>
+            <hr>
+        </div>
+    %elif j==1:
+        <div>
+            <div class="circular--portraitV"> <img src="static\images\au\2.png"/> </div>
+            <hk>Имя: {{res[key][0]}} Lastname:{{res[key][1]}}</hk><br>
+            <pAU>Phone: {{key}}<br>
+            About yoursels: {{res[key][2]}}
+            </pAU>
+            <hr>
+        </div>
+    %elif j==2:
+       <div>
+            <div class="circular--portraitV"> <img src="static\images\au\3.png"/> </div>
+            <pAU>Name: {{res[key][0]}}<br> Lastname:{{res[key][1]}}</pAU><br>
+            <pAU>Phone: {{key}}<br>
+            About yoursels: {{res[key][2]}}
+            </pAU>
+            <hr>
+        </div>
+    %elif j==3:
+       <div>
+            <div class="circular--portraitV"> <img src="static\images\au\4.png"/> </div>
+            <pAU>Name: {{res[key][0]}}<br> Lastname:{{res[key][1]}}</pAU><br>
+            <pAU>Phone: {{key}}<br>
+            About yoursels: {{res[key][2]}}
+            </pAU>
+            <hr>
+        </div>
+    %elif j==4:
+       <div>
+            <div class="circular--portraitV"> <img src="static\images\au\5.png"/> </div>
+            <hk>Name: {{res[key][0]}}<br> Lastname:{{res[key][1]}}</hk><br>
+            <pAU>Phone: {{key}}<br>
+            About yoursels: {{res[key][2]}}
+            </pAU>
+            <hr>
+        </div>
