@@ -554,3 +554,19 @@ input.A {
     background-color: transparent;
     color:white;
 }
+
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portraitV {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 200px; /*ширина*/
+    height: 200px; /*высота*/
+    overflow: hidden;
+    border-radius: 50%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portraitV img {
+        width: 100%;
+        height: auto;
+    }

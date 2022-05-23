@@ -1,3 +1,4 @@
+import webbrowser
 from bottle import post, request
 import json
 import checkPhone
@@ -28,5 +29,5 @@ def active_user_page():
         #saving data to file
         with open('activeUserFile.json', 'w') as outfile:
             json.dump(dataUser, outfile)
-
-    return name, lastname, phone, user
+    
+    webbrowser.open("http://localhost:64468/activeUsers")

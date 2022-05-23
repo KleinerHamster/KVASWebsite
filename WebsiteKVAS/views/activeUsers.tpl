@@ -15,6 +15,19 @@
     <p><br></p>
     <p><br></p>
 </div>
+%import json
+%dataUsers = {}
+%img=["static\images\active_users_v\1.png","static\images\active_users_v\2.png","static\images\active_users_v\3.png","static\images\active_users_v\4.png","static\images\active_users_v\5.png"]
+%with open('activeUserFile.json') as jsonFile:
+    %dataUsers=json.load(jsonFile)
+%res=dict(reversed(list(dataUsers.items())))
+%for i in range(len(res)):
+    %j=1
+    {{j}}
+    <hr>
+
+<p>{{res}}</p>
+
 <!--Форма для ввода информации-->
 <form action="/activeUsers" method="post">
     <!--Первое сплывающее окно-->
