@@ -15,6 +15,22 @@
     <p><br></p>
     <p><br></p>
 </div>
+%import json
+%import random
+%dataUsers = {}
+%img=["static\images\active_users_v\1.png","static\images\active_users_v\2.png","static\images\active_users_v\3.png","static\images\active_users_v\4.png","static\images\active_users_v\5.png"]
+%with open('activeUserFile.json') as jsonFile:
+    %dataUsers=json.load(jsonFile)
+%res=dict(reversed(list(dataUsers.items())))
+%for i in range(len(res)):
+    %j=random.randint(0,4)
+    %img_num=img[j]
+    {{img_num}}
+    <div class="circular--portrait"> <img src="static\images\active_users_v\1.png" /> </div><br>
+    <hr>
+
+<p>{{res}}</p>
+
 <!--Форма для ввода информации-->
 <form action="/activeUsers" method="post">
     <!--Первое сплывающее окно-->

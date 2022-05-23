@@ -18,9 +18,8 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>WebsiteKVAS</Name>
     <RootNamespace>WebsiteKVAS</RootNamespace>
-    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
-    <WebBrowserPort>
-    </WebBrowserPort>
+    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
+    <WebBrowserPort>64468</WebBrowserPort>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
     <UnitTestRootDirectory>.</UnitTestRootDirectory>
@@ -72,7 +71,7 @@
     <Compile Include="routes.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="static\images\active_users_v\" />
+    <Folder Include="static\images\au\" />
     <Folder Include="static\images\feedback\" />
     <Folder Include="static\images\useful_articles\" />
     <Folder Include="static\images\our_partners\" />
@@ -101,11 +100,11 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="static\images\active_users_v\1.png" />
-    <Content Include="static\images\active_users_v\2.png" />
-    <Content Include="static\images\active_users_v\3.png" />
-    <Content Include="static\images\active_users_v\4.png" />
-    <Content Include="static\images\active_users_v\5.png" />
+    <Content Include="static\images\au\1.png" />
+    <Content Include="static\images\au\2.png" />
+    <Content Include="static\images\au\3.png" />
+    <Content Include="static\images\au\4.png" />
+    <Content Include="static\images\au\5.png" />
     <Content Include="static\images\blockchain\2.png" />
     <Content Include="static\images\blockchain\bl.png" />
     <Content Include="static\images\blockchain\devb.png" />
