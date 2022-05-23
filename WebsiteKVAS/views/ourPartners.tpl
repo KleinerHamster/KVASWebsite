@@ -42,7 +42,8 @@
                     <!--третий столбец-->
                     <separateS>
                         <!-- добавляем поле для логотипа компании-->
-                        <bodyTextAu>Link:<br><input type="text" id="link" name="link" size="100"/></bodyTextAu>   
+                        <bodyTextAu>Link:<br><input type="text" id="link" placeholder="Your link" name="link" size="100" required oninvalid="this.setCustomValidity('Enter the link to the official website!')" 
+                        oninput="this.setCustomValidity('')"></bodyTextAu>   
                     </separateS>
                 </conteinerS>
 
@@ -52,30 +53,33 @@
                     <delimeterS></delimeterS>
                     <!--делим на три столбца-->
                     <separateS>
-                        <!-- добавляем текстовое поле для для почты-->
-                        <bodyTextAu>Phone:<br><input type="phone" size="50" id="phone" name="phone" placeholder="Your phone" required oninvalid="this.setCustomValidity('Enter your phone!')" 
+                        <!-- добавляем текстовое поле для телефона-->
+                        <bodyTextAu>Phone:<br><input type="phone" size="50" id="phone" name="phone" placeholder="Your phone" pattern="[+][7][(][0-9]{3}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}$" 
+                        required oninvalid="this.setCustomValidity('Enter your phone in format +7(xxx) xxx-xx-xx')"  
                         oninput="this.setCustomValidity('')"></bodyTextAu>   
                     </separateS>
-                    <!--пустой столбец-->
-                    <delimeterS></delimeterS>
-                    <!--третий столбец-->
-                    <separateS>
-                        <!-- добавляем текстовое поле для информации о себе-->
-                        <bodyTextAu>About company: <textarea rows="2" cols="50" name="you" placeholder="About company" required oninvalid="this.setCustomValidity('Enter information about ypurself!')"
-                        oninput="this.setCustomValidity('')"></textarea></bodyTextAu><br><br>
-                    </separateS>
 
+                    <!--пустой столбец-->
                     <delimeterS></delimeterS>
                     <!--делим на три столбца-->
                     <separateS>
                         <!-- добавляем текстовое поле для для почты-->
-                        <bodyTextAu>Phone:<br><input type="url" size="50" id="file" name="file" placeholder="Your phone" required oninvalid="this.setCustomValidity('Enter your phone!')" 
+                        <bodyTextAu>Company logo:<br><input type="url" size="50" id="file" name="file" placeholder="Your logo" required oninvalid="this.setCustomValidity('Enter an html link with your company's logo!')" 
                         oninput="this.setCustomValidity('')"></bodyTextAu>   
                     </separateS>
 
                 </conteinerS>
 
-                
+                <conteinerS>
+                    <!--пустой столбец-->
+                    <delimeterS></delimeterS>
+                    <!--третий столбец-->
+                    <separateS>
+                        <!-- добавляем текстовое поле для информации о себе-->
+                        <bodyTextAu>About company: <textarea  rows="4" name="About you company" placeholder="About company" required oninvalid="this.setCustomValidity('Enter a description for your company!')"
+                        oninput="this.setCustomValidity('')"></textarea></bodyTextAu><br><br>
+                    </separateS>
+                </conteinerS>
                 <!--разделитель на абзацы-->
                 <hr>
                 <!-- добавляем кнопку-->
@@ -85,6 +89,5 @@
 	    </div>
     </div>
 </form>
-
 
 {{!html}}

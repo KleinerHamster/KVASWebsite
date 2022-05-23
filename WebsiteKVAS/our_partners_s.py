@@ -3,6 +3,7 @@ import pdb
 import json
 import webbrowser
 import urllib.request
+import checkPhone
 
 
 
@@ -17,30 +18,32 @@ def my_form():
     you = request.forms.get('you')
     file = request.forms.get('file')
 
-    data=[]
-    with open('sofi.json') as j:
-            data=json.load(j)
-    
+    array_company=[]
+        
+    try:
+        with open('partnerCompany.json') as j:
+                array_company=json.load(j)
+    except:
+        pass
 
     url=file
     img = urllib.request.urlopen(url).read()
-    out = open((str)(len(data)+1)+"imgp.jpg", "wb")
+    out = open("static\images\our_partners\\"+(str)(len(array_company)+1)+"img.jpg", "wb")
     out.write(img)
     out.close
 
-    
-    information=[(str)(len(data)+1)+"imgp.jpg",you,name,phone,link]
+    information=["static\images\our_partners\\"+(str)(len(array_company)+1)+"img.jpg",name,you,phone,link]
 
     try:
-        with open('sofi.json') as j:
-            data.append(information)
+        with open('partnerCompany.json') as j:
+            array_company.append(information)
     except ValueError:
-        data.append(information)
+        array_company.append(information)
 
-    with open('sofi.json','w') as outfile:
-        json.dump(data,outfile)
+    with open('partnerCompany.json','w') as outfile:
+        json.dump(array_company,outfile)
     
 
-    webbrowser.open("http://localhost:51124/ourPartners")
+    webbrowser.open("http://localhost:64468/ourPartners")
     
 
