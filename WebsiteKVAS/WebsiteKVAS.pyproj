@@ -24,6 +24,7 @@
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
     <UnitTestRootDirectory>.</UnitTestRootDirectory>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,6 +55,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unitests\kama\test_date.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="checkPhone.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unitests\vi\test_checkPhone_v.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="useful_articles_k.py">
