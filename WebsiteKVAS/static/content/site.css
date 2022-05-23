@@ -586,3 +586,23 @@ input.A {
         width: 100%;
         height: auto;
     }
+pAU1 {
+    font-family: 'Georgia',Georgia, serif; /*Шрифт*/
+    font-size: 28pt; /*Гегель шрифта*/
+    color: #954860; /*Цвет шрифта*/
+}
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portraitVA {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 150px; /*ширина*/
+    height: 150px; /*высота*/
+    overflow: hidden;
+    border-radius: 50%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portraitVA img {
+        width: 100%;
+        height: auto;
+    }

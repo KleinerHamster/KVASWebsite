@@ -13,7 +13,6 @@
     <!--разделитель на абзацы-->
     <hr>
     <p><br></p>
-    <p><br></p>
 </div>
 <!--Форма для ввода информации-->
 <form action="/activeUsers" method="post">
@@ -86,47 +85,42 @@
     %array=res[key]
     %j=random.randint(0,4)
     %if j==0:
-        <div>
-            <div class="circular--portraitV"> <img src="static\images\au\1.png"/> </div>
-            <hk>Имя: {{res[key][0]}} Lastname:{{res[key][1]}}</hk><br>
-            <pAU>Phone: {{key}}<br>
-            About yoursels: {{res[key][2]}}
-            </pAU>
-            <hr>
-        </div>
+        <img class="circular--portraitVA" src = "static\images\au\1.png">
+        <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
+        <bodyTextAu>Phone: {{key}}<br>
+        About yoursels: {{res[key][2]}}
+        </bodyTextAu>
+        <hr>
+        <br><br><br><br>
     %elif j==1:
-        <div>
-            <div class="circular--portraitV"> <img src="static\images\au\2.png"/> </div>
-            <hk>Имя: {{res[key][0]}} Lastname:{{res[key][1]}}</hk><br>
-            <pAU>Phone: {{key}}<br>
-            About yoursels: {{res[key][2]}}
-            </pAU>
-            <hr>
-        </div>
+        <img class="circular--portraitVA" src = "static\images\au\2.png">
+        <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
+        <bodyTextAu>Phone: {{key}}<br>
+        About yoursels: {{res[key][2]}}
+        </bodyTextAu>
+        <hr>
+        <br><br><br><br>
     %elif j==2:
-       <div>
-            <div class="circular--portraitV"> <img src="static\images\au\3.png"/> </div>
-            <pAU>Name: {{res[key][0]}}<br> Lastname:{{res[key][1]}}</pAU><br>
-            <pAU>Phone: {{key}}<br>
-            About yoursels: {{res[key][2]}}
-            </pAU>
-            <hr>
-        </div>
+        <img class="circular--portraitVA" src = "static\images\au\3.png">
+        <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
+        <bodyTextAu>Phone: {{key}}<br>
+        About yoursels: {{res[key][2]}}
+        </bodyTextAu>
+        <hr>
+        <br><br><br><br>
     %elif j==3:
-       <div>
-            <div class="circular--portraitV"> <img src="static\images\au\4.png"/> </div>
-            <pAU>Name: {{res[key][0]}}<br> Lastname:{{res[key][1]}}</pAU><br>
-            <pAU>Phone: {{key}}<br>
-            About yoursels: {{res[key][2]}}
-            </pAU>
-            <hr>
-        </div>
+        <img class="circular--portraitVA" src = "static\images\au\4.png">
+        <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
+        <bodyTextAu>Phone: {{key}}<br>
+        About yoursels: {{res[key][2]}}
+        </bodyTextAu>
+        <hr>
+        <br><br><br><br>
     %elif j==4:
-       <div>
-            <div class="circular--portraitV"> <img src="static\images\au\5.png"/> </div>
-            <hk>Name: {{res[key][0]}}<br> Lastname:{{res[key][1]}}</hk><br>
-            <pAU>Phone: {{key}}<br>
-            About yoursels: {{res[key][2]}}
-            </pAU>
-            <hr>
-        </div>
+        <img class="circular--portraitVA" src = "static\images\au\5.png">
+       <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
+        <bodyTextAu>Phone: {{key}}<br>
+        About yoursels: {{res[key][2]}}
+        </bodyTextAu>
+        <hr>
+        <br><br><br><br>

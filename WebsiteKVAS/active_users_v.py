@@ -11,7 +11,7 @@ def active_user_page():
     phone = request.forms.get('phone')
     user = request.forms.get('you')
     dataUser = {}#array of active user
-    flag=0
+    flag=0#flag for 
     if(checkPhone.check_phone(phone)):
         try:
             #loading a dictionary from file
