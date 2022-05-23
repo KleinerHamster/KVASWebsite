@@ -409,7 +409,7 @@ dateA {
 .buttonA {
     border-radius: 5px; /*rouding a rectangular button*/
     border: 1px; /*button border thickness*/
-    solid #c50224; /*border color*/
+    
     color: #c50224; /*text on the button color*/
     background: white;
     text-decoration: none; /*disable link underlining*/
@@ -525,4 +525,32 @@ conteinerA {
 /*for news blocks on the sides of the page*/
 newsonthesidesA {
     width: 33.33333333333333%;
+}
+
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portrait {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 80px; /*ширина*/
+    height: 80px; /*высота*/
+    overflow: hidden;
+    border-radius: 50%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portrait img {
+        width: 100%;
+        height: auto;
+    }
+    .circular--portrait:hover {
+        border: 5px inset;
+        border-color: #954860; /*Цвет выделения*/
+    }
+
+input.A {
+    border: 0px; /*Границы стиля*/
+    background: #ea9dbd;
+    width: 250px;
+    background-color: transparent;
+    color:white;
 }

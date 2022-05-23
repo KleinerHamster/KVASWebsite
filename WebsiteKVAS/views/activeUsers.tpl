@@ -16,7 +16,7 @@
     <p><br></p>
 </div>
 <!--Форма для ввода информации-->
-<form action="/feedback" method="post">
+<form action="/activeUsers" method="post">
     <!--Первое сплывающее окно-->
     <div id="popup1" class="overlay">
 	    <div class="popup">
@@ -53,7 +53,7 @@
                     <!--делим на три столбца-->
                     <separateS>
                         <!-- добавляем текстовое поле для для почты-->
-                        <bodyTextAu>Phone:<br><input type="phone" size="50" id="phone" name="phone" placeholder="Your phone" required oninvalid="this.setCustomValidity('Enter your phone!')" 
+                        <bodyTextAu>Phone:<br><input type="phone" size="50" id="phone" name="phone" placeholder="Your phone" pattern="[+][7][(][0-9]{3}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}$" required oninvalid="this.setCustomValidity('Enter your phone in format +7(xxx) xxx-xx-xx')" 
                         oninput="this.setCustomValidity('')"></bodyTextAu>   
                     </separateS>
                     <!--пустой столбец-->

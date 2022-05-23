@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>WebsiteKVAS</Name>
     <RootNamespace>WebsiteKVAS</RootNamespace>
-    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>
     </WebBrowserPort>
     <TestFramework>unittest</TestFramework>
@@ -94,6 +94,11 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\images\active_users_v\1.png" />
+    <Content Include="static\images\active_users_v\2.png" />
+    <Content Include="static\images\active_users_v\3.png" />
+    <Content Include="static\images\active_users_v\4.png" />
+    <Content Include="static\images\active_users_v\5.png" />
     <Content Include="static\images\blockchain\2.png" />
     <Content Include="static\images\blockchain\bl.png" />
     <Content Include="static\images\blockchain\devb.png" />
