@@ -76,7 +76,7 @@
                     <!--третий столбец-->
                     <separateS>
                         <!-- добавляем текстовое поле для информации о себе-->
-                        <bodyTextAu>About company: <textarea  rows="4" name="About you company" placeholder="About company" required oninvalid="this.setCustomValidity('Enter a description for your company!')"
+                        <bodyTextAu>About company: <textarea  rows="4" name="you" placeholder="About company" required oninvalid="this.setCustomValidity('Enter a description for your company!')"
                         oninput="this.setCustomValidity('')"></textarea></bodyTextAu><br><br>
                     </separateS>
                 </conteinerS>
