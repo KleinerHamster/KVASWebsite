@@ -49,8 +49,21 @@
         
 </form>
 
-%a = 5
-%for i in range(a):
-     <hr>
-    <div class="button13"  value="{{a}}"></div>
-%end 
+%import json
+%dictionary_={} 
+%dictionary={} 
+%with open('useful_articles.txt') as json_file:
+    %dictionary_ = json.load(json_file)  
+%dictionary=dict(reversed(list(dictionary_.items())))
+%for key in dictionary:
+    %array=dictionary[key]
+    <div>
+        <hK>"{{key}}"<br>
+        Autor: {{dictionary[key][0]}}<br></hk>
+        <bodyTextS>{{dictionary[key][1]}}<br>
+        Date of writing: date</bodyTextS>
+            <hr>
+    </div>
+
+
+ 
