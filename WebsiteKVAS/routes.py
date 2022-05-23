@@ -67,6 +67,9 @@ def contact():
     """Renders the contact page."""
     import pandas as pd
     import json
+
+    
+
     data_frame = pd.DataFrame(columns=['','Company name','Description','Contact phone number','Learn more'])
 
     array_company=[]

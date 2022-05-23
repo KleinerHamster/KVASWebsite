@@ -623,7 +623,7 @@ th, td {
     font-size: 16pt; /*Гегель шрифта*/
     color: black; /*Цвет шрифта*/
     border: solid 3px #954860;
-    text-align: center; /*текст по центру*/
+    text-align: justify; /*текст по центру*/
 }
 
 th {

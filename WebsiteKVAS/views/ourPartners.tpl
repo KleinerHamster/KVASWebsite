@@ -2,7 +2,10 @@
 <!-- добавляем текст рядом с кнопкои-->
 <hAU1>Our Partners<br></hAU1>
 
-<!--{!html}}-->
+<p><br></p>
+
+<p14>On this page you can find a list of organizations with which our company works. 
+    to get related information, you can click on the link left next to each organization.<br></p14>
 
 <!--шапка страницы-->
 <div >
