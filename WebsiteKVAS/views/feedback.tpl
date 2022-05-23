@@ -22,11 +22,37 @@ function saveIcon(iconValue){
 <hr>
 <p><br></p>
 
+<!--mas.reverse()  random.uniform(0,1)-->
 %import json
-%dataQuestions = []
+%import random
+%dataFeedback = []
+
 %with open('feedbackFile.json') as jsonFile:
-    %dataQuestions=json.load(jsonFile)
-<p>{{dataQuestions}}</p>
+    %dataFeedback=json.load(jsonFile)
+
+%dataFeedback.reverse()
+
+%ddd=random.randint(0,4)
+{{ddd}}
+
+%for i in range(len(dataFeedback)):
+    <b>{{i}}:</b>
+    <conteinerA>
+        <newsonthesidesA>
+            <p>{{(dataFeedback[i])[0]}}</p>
+        </newsonthesidesA>
+        <newsinthecenterA>
+            <p>{{(dataFeedback[i])[1]}}</p>
+        </newsinthecenterA>
+        <newsinthecenterA>
+            <p>{{(dataFeedback[i])[2]}}</p>
+        </newsinthecenterA>
+    </conteinerA>
+    <p>{{(dataFeedback[i])[3]}}</p>
+    <p>{{(dataFeedback[i])[4]}}</p>
+    <p>{{(dataFeedback[i])[5]}}</p>
+%end
+<hr>
 
 
 <!--Форма для ввода информации-->
