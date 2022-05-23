@@ -84,15 +84,15 @@ function saveIcon(iconValue){
                     <separateS>
                         <!--feeld name-->
                         <bodyTextAu>Enter name: <br>
-                        <input type="text" size="15" name="UserName" placeholder="Your name" minlength = "5" maxlength = "20" required></bodyTextAu> 
+                        <input type="text" size="15" name="NAME" placeholder="Your name" minlength = "5" maxlength = "20" required></bodyTextAu> 
                     </separateS>
                     <!--пустой столбец-->
                     <delimeterS></delimeterS>
                     <!--третий столбец-->
                     <separateS>
                         <!--feeld surname-->
-                        <bodyTextAu>Enter lastname:<br>
-                        <input type="text" size="40" name="UserSurname" placeholder="Your surname" minlength = "5" maxlength = "25" required></bodyTextAu><br><br>
+                        <bodyTextAu>Enter surname:<br>
+                        <input type="text" size="40" name="SURNAME" placeholder="Your surname" minlength = "5" maxlength = "25" required></bodyTextAu><br><br>
                     </separateS>
                 </conteinerS>
 
@@ -103,8 +103,8 @@ function saveIcon(iconValue){
                     <!--делим на три столбца-->
                     <separateS>
                         <!--feeld phone-->
-                        <bodyTextAu>Enter phone: 
-                        <input type="text" size="40" name="Phone" placeholder="Your phone" minlength = "5" maxlength = "25" 
+                        <bodyTextAu>Enter phone number: 
+                        <input type="text" size="40" name="PHONE" placeholder="Your phone" minlength = "5" maxlength = "25" 
                         pattern="[+][7][(][0-9]{3}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}$" 
                         required oninvalid="this.setCustomValidity('Enter your phone in format +7(xxx) xxx-xx-xx')" 
                         oninput="this.setCustomValidity('')"></bodyTextAu>   
