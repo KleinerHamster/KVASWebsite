@@ -570,3 +570,19 @@ input.A {
         width: 100%;
         height: auto;
     }
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portraitA {
+  
+    position: relative;
+    width: 200px; /*ширина*/
+    overflow: hidden;
+    margin: 10px; /*Внешние отступы*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+    .circular--portraitA img {
+        width: 100%;
+        height: auto;
+    }

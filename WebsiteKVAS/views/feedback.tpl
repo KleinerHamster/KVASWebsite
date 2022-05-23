@@ -3,6 +3,7 @@
 <script>
 function saveIcon(iconValue){
     document.getElementById("IconCount").value= iconValue;
+
     //alert(iconValue);
 }
 </script>
@@ -34,7 +35,7 @@ function saveIcon(iconValue){
 
 %for i in range(len(dataFeedback)):
     %roundImageUser=random.randint(1,5)
-    <img class="circular--portraitV" src = "static\images\au\{{roundImageUser}}.png" width="200">
+    <img class="circular--portraitV" src = "static\images\au\{{roundImageUser}}.png">
     <img src = "static\images\feedback\{{(dataFeedback[i])[4]}}_stars.png" width="200">
     <bodyTextAu>
         <conteinerS>
@@ -128,8 +129,9 @@ function saveIcon(iconValue){
                     </newsonthesidesA>
                 </conteinerA>
 
-                <p></p>
-                <p></p>
+                //Image for raiting in feedback writing
+                <img class="circular--portraitA" src = "static\images\feedback\1_stars.png" width="200" id="imageStars">
+
                 <!--контейнер-->
                 <conteinerS>
                     <!--пустой столбец-->

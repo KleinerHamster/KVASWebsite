@@ -3,6 +3,7 @@ import pdb
 import json
 import re 
 import datetime
+import webbrowser
 #post - sends data to the server in a browser request
 #request - sending all types of HTTP requests
 
@@ -52,3 +53,4 @@ def my_form():
     with open('feedbackFile.json', 'w') as outfile:
         json.dump(dataFeedback, outfile)
 
+    webbrowser.open("http://localhost:64468/feedback")
