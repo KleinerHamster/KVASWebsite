@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>WebsiteKVAS</Name>
     <RootNamespace>WebsiteKVAS</RootNamespace>
-    <InterpreterId>MSBuild|env4|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>64468</WebBrowserPort>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
@@ -63,6 +63,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="checkPhone.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unitests\kama\test_true_date.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unitests\vi\test_checkPhone_v.py">
