@@ -61,7 +61,7 @@
                     <!--третий столбец-->
                     <separateS>
                         <!-- добавляем текстовое поле для информации о себе-->
-                        <bodyTextAu>About yourself: <textarea rows="2" cols="50" name="you" placeholder="About yourself" required oninvalid="this.setCustomValidity('Enter information about ypurself!')"
+                        <bodyTextAu>About yourself: <textarea rows="2" cols="50" id="you" name="you" placeholder="About yourself" required oninvalid="this.setCustomValidity('Enter information about ypurself!')"
                         oninput="this.setCustomValidity('')"></textarea></bodyTextAu><br><br>
                     </separateS>
                 </conteinerS>
