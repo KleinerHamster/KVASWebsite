@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>WebsiteKVAS</Name>
     <RootNamespace>WebsiteKVAS</RootNamespace>
-    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env5|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>64468</WebBrowserPort>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
@@ -47,6 +47,9 @@
     <Compile Include="our_partners_s.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="static\images\our_partners\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="unitests\ann\PhoneFeedback.py">
       <SubType>Code</SubType>
     </Compile>
@@ -63,6 +66,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="checkPhone.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unitests\kama\test_true_date.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unitests\vi\test_checkPhone_v.py">
@@ -147,6 +153,8 @@
     <Content Include="static\images\lastnews\mynew_5.png" />
     <Content Include="static\images\lastnews\mynew_6.png" />
     <Content Include="static\images\lastnews\newsHeader.png" />
+    <Content Include="static\images\our_partners\7imgp.jpg" />
+    <Content Include="static\images\our_partners\8imgp.jpg" />
     <Content Include="static\images\thingworx\b1.png" />
     <Content Include="static\images\thingworx\b2.png" />
     <Content Include="static\images\thingworx\b3.png" />
@@ -211,6 +219,24 @@
       <Id>env3</Id>
       <Version>3.7</Version>
       <Description>env3 (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env4\">
+      <Id>env4</Id>
+      <Version>3.9</Version>
+      <Description>env4 (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env5\">
+      <Id>env5</Id>
+      <Version>3.9</Version>
+      <Description>env5 (Python 3.9 (64-bit))</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>

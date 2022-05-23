@@ -58,10 +58,10 @@
 %for key in dictionary:
     %array=dictionary[key]
     <div>
-        <hK>"{{key}}"<br>
-        Autor: {{dictionary[key][0]}}<br></hk>
-        <bodyTextS>{{dictionary[key][1]}}<br>
-        Date of writing: date</bodyTextS>
+     <pAU1><br>"{{key}}"</pAU1>
+        <hk><br>Autor: {{dictionary[key][0]}}<br></hk>
+        <bodyTextAu>{{dictionary[key][1]}}<br>
+        Date of writing: date</bodyTextAu>
             <hr>
     </div>
 
