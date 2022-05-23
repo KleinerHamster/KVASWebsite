@@ -3,10 +3,59 @@
 <script>
 function saveIcon(iconValue){
     document.getElementById("IconCount").value= iconValue;
+    //var image = document.getElementById("imageStars");
+    //var source = image.src;
+    //window.open(source);
 
-    //var fff="static\images\feedback\3_stars.png"
-    //document.getElementById("imageStars").src = "static\images\feedback\3_stars.png";
+    document.getElementById("imageStars0").style.display = "none";
+
+    switch (iconValue){
+       case 1:
+        document.getElementById("imageStars1").style.display = "block";
+        document.getElementById("imageStars2").style.display = "none";
+        document.getElementById("imageStars3").style.display = "none";
+        document.getElementById("imageStars4").style.display = "none";
+        document.getElementById("imageStars5").style.display = "none";
+        break;
+       case 2:
+        document.getElementById("imageStars2").style.display = "block";
+        document.getElementById("imageStars1").style.display = "none";
+        document.getElementById("imageStars3").style.display = "none";
+        document.getElementById("imageStars4").style.display = "none";
+        document.getElementById("imageStars5").style.display = "none";
+        break;
+       case 3:
+        document.getElementById("imageStars3").style.display = "block";
+        document.getElementById("imageStars1").style.display = "none";
+        document.getElementById("imageStars2").style.display = "none";
+        document.getElementById("imageStars4").style.display = "none";
+        document.getElementById("imageStars5").style.display = "none";
+        break;
+       case 4:
+        document.getElementById("imageStars4").style.display = "block";
+        document.getElementById("imageStars1").style.display = "none";
+        document.getElementById("imageStars2").style.display = "none";
+        document.getElementById("imageStars3").style.display = "none";
+        document.getElementById("imageStars5").style.display = "none";
+        break;
+       case 5:
+        document.getElementById("imageStars5").style.display = "block";
+        document.getElementById("imageStars1").style.display = "none";
+        document.getElementById("imageStars2").style.display = "none";
+        document.getElementById("imageStars3").style.display = "none";
+        document.getElementById("imageStars4").style.display = "none";
+        break;
+    }
+
     //alert(fff);
+}
+
+function hideImg(){
+    document.getElementById("imageStars1").style.display = "none";
+    document.getElementById("imageStars2").style.display = "none";
+    document.getElementById("imageStars3").style.display = "none";
+    document.getElementById("imageStars4").style.display = "none";
+    document.getElementById("imageStars5").style.display = "none";
 }
 </script>
 
@@ -19,7 +68,7 @@ function saveIcon(iconValue){
 <div >
     <pAU>Write about us<br></pAU>
     <!-- добавляем кнопку-->
-    <a href="#popup1" class="buttonAU1">Write now</a>
+    <a href="#popup1" class="buttonAU1"  onclick="hideImg()" >Write now</a>
 </div>
 
 <hr>
@@ -132,7 +181,12 @@ function saveIcon(iconValue){
                 </conteinerA>
 
                 <!--Image for raiting in feedback writing-->
-                <img class="circular--portraitA" src = "static\images\feedback\1_stars.png" width="200" id="imageStars">
+                <img class="circular--portraitA" src = "static\images\feedback\0stars.png" width="200" id="imageStars0">
+                <img class="circular--portraitA" src = "static\images\feedback\1stars.png" width="200" id="imageStars1">
+                <img class="circular--portraitA" src = "static\images\feedback\2stars.png" width="200" id="imageStars2">
+                <img class="circular--portraitA" src = "static\images\feedback\3stars.png" width="200" id="imageStars3">
+                <img class="circular--portraitA" src = "static\images\feedback\4stars.png" width="200" id="imageStars4">
+                <img class="circular--portraitA" src = "static\images\feedback\5stars.png" width="200" id="imageStars5">
 
                 <!--контейнер-->
                 <conteinerS>
@@ -180,7 +234,7 @@ function saveIcon(iconValue){
                 <!--разделитель на абзацы-->
                 <hr>
                 <!-- добавляем кнопку-->
-                <input type="submit"  class="buttonAU1" value="Send">
+                <input type="submit"  class="buttonAU1" value="Publish">
                 </bodyTextAu>
 	    </div>
     </div>

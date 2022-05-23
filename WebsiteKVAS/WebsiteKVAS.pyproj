@@ -10,7 +10,7 @@
     <StartupFile>app.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>C:\Users\Anya\source\repos\KVASWebsite\WebsiteKVAS\unitests\vi\.</WorkingDirectory>
+    <WorkingDirectory>.</WorkingDirectory>
     <LaunchProvider>Web launcher</LaunchProvider>
     <OutputPath>.</OutputPath>
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
@@ -22,7 +22,7 @@
     <WebBrowserPort>64468</WebBrowserPort>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
-    <UnitTestRootDirectory>C:\Users\Anya\source\repos\KVASWebsite\WebsiteKVAS\unitests\vi\.</UnitTestRootDirectory>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -117,15 +117,21 @@
     <Content Include="static\images\blockchain\ibm.jpg" />
     <Content Include="static\images\blockchain\preview - case.jpg" />
     <Content Include="static\images\blockchain\udemy.png" />
+    <Content Include="static\images\feedback\0stars.png" />
     <Content Include="static\images\feedback\0_stars.png" />
+    <Content Include="static\images\feedback\1stars.png" />
     <Content Include="static\images\feedback\1_stars.png" />
     <Content Include="static\images\feedback\1_stars_smile.png" />
+    <Content Include="static\images\feedback\2stars.png" />
     <Content Include="static\images\feedback\2_stars.png" />
     <Content Include="static\images\feedback\2_stars_smile.png" />
+    <Content Include="static\images\feedback\3stars.png" />
     <Content Include="static\images\feedback\3_stars.png" />
     <Content Include="static\images\feedback\3_stars_smile.png" />
+    <Content Include="static\images\feedback\4stars.png" />
     <Content Include="static\images\feedback\4_stars.png" />
     <Content Include="static\images\feedback\4_stars_smile.png" />
+    <Content Include="static\images\feedback\5stars.png" />
     <Content Include="static\images\feedback\5_stars.png" />
     <Content Include="static\images\feedback\5_stars_smile.png" />
     <Content Include="static\images\homepage\homeIMG.png" />

@@ -1,7 +1,13 @@
 [
-  [ "+7(911) 848-59-94", "Anya", "Alekseeva", "hhh", "2", "15:46:21 23.05.2022" ],
-  [ "+7(921) 848-59-94", "Anya", "Alekseeva", "kkk", "4", "15:46:21 23.05.2022" ],
-  [ "+7(911) 638-75-37", "Sonic", "Alekseevna", "kkkkkk", "2", "15:46:21 23.05.2022" ],
-  [ "+7(033) 793-65-32", "Kanaw", "Alekseeva", "998989", "0", "15:48:25 23.05.2022" ],
-  [ "+7(911) 848-59-94", "Fifas", "Mishustin", "I am glad to have you!", "2", "17:51:25 23.05.2022" ], 
-  ["+7(033) 793-65-32", "Hihaha", "Gubnova", "So so, I can anderstand", "4", "17:52:51 23.05.2022"]]
+  [ "+7(911) 848-59-94", "Anya", "Alekseeva", "We finally got a great design for our very first website. We managed to work together as a team and find compromises in everything. Everyone was doing their own thing and it was great!"
+      , "5", "13:45:21 20.05.2022" ],
+  [ "+7(984) 628-95-62", "Kamilla", "Balaeva", "An amazing thing is WorldSkills! Every time I look at the things that the guys create and I'm surprised! It's a pity that it's hard to prepare for such an event. Teachers do not want to waste time on students who are eager, but have a great desire!"
+      , "4", "12:23:34 21.05.2022" ],
+  [ "+7(843) 638-75-37", "Polina", "Nikitina", "I participated in the same competence for several years... No development! The same tasks, only with experience the time of its execution changes! It is interesting to participate several times, then the desire disappears..."
+      , "2", "14:46:21 22.05.2022" ],
+  [ "+7(922) 648-00-11", "Sonya", "Snegova", "We have won many times and we will win!"
+      , "5", "15:48:25 23.05.2022" ],
+  [ "+7(911) 389-89-81", "Veronica", "Abrosimova", "I am really looking forward to the appearance of BlockChain competence in Russia!"
+      , "3", "17:51:25 23.05.2022" ],
+  [ "+7(033) 730-00-21", "Imanuil", "Kant", "These girls from GUAP beat us dry! It is impossible to participate with such a strong team! We are leaving EWorldSkills!"
+      , "0", "17:55:51 23.05.2022" ]]
