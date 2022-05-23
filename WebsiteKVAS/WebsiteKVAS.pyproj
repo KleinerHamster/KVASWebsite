@@ -62,6 +62,10 @@
     <Compile Include="routes.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="static\images\active_users_v\" />
+    <Folder Include="static\images\feedback\" />
+    <Folder Include="static\images\useful_articles\" />
+    <Folder Include="static\images\our_partners\" />
     <Folder Include="unitests\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
