@@ -18,12 +18,11 @@ function saveIcon(iconValue){
     <!-- добавляем кнопку-->
     <a href="#popup1" class="buttonAU1">Write now</a>
     
-    <!--разделитель на абзацы-->
+
+</div>
     <hr>
     <p><br></p>
     <p><br></p>
-</div>
-
 <!--Форма для ввода информации-->
 <form action="/feedback" method="post">
     <!--Первое сплывающее окно-->
@@ -35,8 +34,6 @@ function saveIcon(iconValue){
                 <hr>
 		        <a class="close" href="#">x</a>
 		        <div class="content">
-
-                <form action="/feedback" method="post">   
                 <!--five elements of smiles in leave feedback-->
                 <conteinerA>
                 <!--пустой столбец-->
@@ -45,31 +42,31 @@ function saveIcon(iconValue){
                     <!--first smile-->
                     <newsonthesidesA>
                         <!--image of first smile-->
-                        <img src = "static\images\feedback\1_stars_smile.png" width = "50" title="Awful" onclick="saveIcon(1)">
+                        <img class="circular--portrait" src = "static\images\feedback\1_stars_smile.png" title="Awful" onclick="saveIcon(1)">
                     </newsonthesidesA>
 
                     <!--second smile-->
                     <newsinthecenterA>
                         <!--image of second smile-->
-                        <img src = "static\images\feedback\2_stars_smile.png" width = "50" title="Bad" onclick="saveIcon(2)">
+                        <img class="circular--portrait" src = "static\images\feedback\2_stars_smile.png"  title="Bad" onclick="saveIcon(2)">
                     </newsinthecenterA>
 
                     <!--third smile-->
                     <newsinthecenterA>
                         <!--image of third smile-->
-                        <img src = "static\images\feedback\3_stars_smile.png" width = "50" title="Satisfying" onclick="saveIcon(3)">
+                        <img class="circular--portrait" src = "static\images\feedback\3_stars_smile.png" title="Satisfying" onclick="saveIcon(3)">
                     </newsinthecenterA>
 
                     <!--fourth smile-->
                     <newsinthecenterA>
                         <!--image of fourth smile-->
-                        <img src = "static\images\feedback\4_stars_smile.png" width = "50" title="Alright" onclick="saveIcon(4)">
+                        <img class="circular--portrait" src = "static\images\feedback\4_stars_smile.png" title="Alright" onclick="saveIcon(4)">
                     </newsinthecenterA>
 
                     <!--fifth smile-->
                     <newsonthesidesA>
                         <!--image of fifth smile-->
-                        <img src = "static\images\feedback\5_stars_smile.png" width = "50" title="Excellent" name="GIP" alt="HI" onclick="saveIcon(5)">
+                        <img class="circular--portrait" src = "static\images\feedback\5_stars_smile.png"  title="Excellent" name="GIP" alt="HI" onclick="saveIcon(5)">
 
                     </newsonthesidesA>
                 </conteinerA>
@@ -107,7 +104,8 @@ function saveIcon(iconValue){
                         <input type="text" size="40" name="PHONE" placeholder="Your phone" minlength = "5" maxlength = "25" 
                         pattern="[+][7][(][0-9]{3}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}$" 
                         required oninvalid="this.setCustomValidity('Enter your phone in format +7(xxx) xxx-xx-xx')" 
-                        oninput="this.setCustomValidity('')"></bodyTextAu>   
+                        oninput="this.setCustomValidity('')"></bodyTextAu><br><br><br>
+                        <p><input class="A" type="text" id="IconCount" name="IconCount"></p>
                     </separateS>
                     <!--пустой столбец-->
                     <delimeterS></delimeterS>
@@ -123,9 +121,6 @@ function saveIcon(iconValue){
                 <!-- добавляем кнопку-->
                 <input type="submit"  class="buttonAU1" value="Send">
                 </bodyTextAu>
-                
-                <p><input type="text" size="10" id="IconCount" name="IconCount"></p>
-            </form>
 	    </div>
     </div>
 </form>
