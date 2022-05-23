@@ -67,20 +67,20 @@ def contact():
     """Renders the contact page."""
     import pandas as pd
     import json
-    df = pd.DataFrame(columns=['','Company name','Description','Contact phone number','Learn more'])
+    data_frame = pd.DataFrame(columns=['','Company name','Description','Contact phone number','Learn more'])
 
-    mas=[]
+    array_company=[]
  
-    with open('sofi.json') as j:
-        mas=json.load(j)
-    mas.reverse()
+    with open('partnerCompany.json') as j:
+        array_company=json.load(j)
+    array_company.reverse()
 
-    for i in range(0,len(mas)):
-        df = df.append({'':"<img src="+mas[i][0]+" width=200/>",'Company name':mas[i][1],'Description':mas[i][2],'Contact phone number':mas[i][3],
-                            'Learn more':mas[i][4]}, ignore_index=True)
+    for i in range(0,len(array_company)):
+        data_frame = data_frame.append({'':"<img src="+array_company[i][0]+" width=200/>",'Company name':array_company[i][1],'Description':array_company[i][2],'Contact phone number':array_company[i][3],
+                            'Learn more':array_company[i][4]}, ignore_index=True)
     
     #<img src="static\images\curly_sue\7imgp.jpg"/>
-    html=df.to_html(render_links=True,escape=False)
+    html=data_frame.to_html(render_links=True,escape=False)
 
     return dict(
         title='ourPartners',

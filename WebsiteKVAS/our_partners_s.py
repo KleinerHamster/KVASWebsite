@@ -18,31 +18,30 @@ def my_form():
     you = request.forms.get('you')
     file = request.forms.get('file')
 
-    data=[]
+    array_company=[]
         
     try:
-        with open('sofi.json') as j:
-                data=json.load(j)
+        with open('partnerCompany.json') as j:
+                array_company=json.load(j)
     except:
         pass
 
     url=file
     img = urllib.request.urlopen(url).read()
-    out = open("static\images\our_partners\\"+(str)(len(data)+1)+"img.jpg", "wb")
+    out = open("static\images\our_partners\\"+(str)(len(array_company)+1)+"img.jpg", "wb")
     out.write(img)
     out.close
 
-    
-    information=["static\images\our_partners\\"+(str)(len(data)+1)+"img.jpg",name,you,phone,link]
+    information=["static\images\our_partners\\"+(str)(len(array_company)+1)+"img.jpg",name,you,phone,link]
 
     try:
-        with open('sofi.json') as j:
-            data.append(information)
+        with open('partnerCompany.json') as j:
+            array_company.append(information)
     except ValueError:
-        data.append(information)
+        array_company.append(information)
 
-    with open('sofi.json','w') as outfile:
-        json.dump(data,outfile)
+    with open('partnerCompany.json','w') as outfile:
+        json.dump(array_company,outfile)
     
 
     webbrowser.open("http://localhost:64468/ourPartners")
