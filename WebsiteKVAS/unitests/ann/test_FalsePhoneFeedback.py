@@ -1,9 +1,9 @@
 import unittest
-import PhoneFeedback
+import PhoneFeedback #compare function
 import re 
 
 class PhoneTest(unittest.TestCase):
-
+    #function with testing values
     def test_FalseList(self):
         list_phone_cor = ["+7(91) 911-59-65"
                           , "8(911) 848-59-94"
@@ -21,6 +21,7 @@ class PhoneTest(unittest.TestCase):
                           , "+7(911) 848-59"
                           , "+7(91) 547-59-94"
                           , "(911) 848-59-94"]
+        #input testing values in compare function
         for i in range(len(list_phone_cor)):
             self.assertFalse(PhoneFeedback.getPhone(list_phone_cor[i]))
 

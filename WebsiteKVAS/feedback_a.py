@@ -10,19 +10,22 @@ import webbrowser
 @post('/feedback', method='post')
 def my_form():
 
-    #assigning an address field value
+    #filling variables with values
     icon=request.forms['IconCount']
     userName = request.forms.get('NAME')
     userSurname = request.forms.get('SURNAME')
     userPhone = request.forms.get('PHONE')
     userFeedback = request.forms.get('FEEDBACK')
 
+    #take date and time by now
     today = datetime.datetime.today()
     printToday = today.strftime("%H:%M:%S %d.%m.%Y")
 
+    #set value for smile-image with 0
     if(icon == ""):
         icon = "0"
 
+    #initialization array anf fill another array with data
     dataFeedback = []
     dataOnce = [userPhone, userName, userSurname, userFeedback, icon, printToday]
 
@@ -44,6 +47,7 @@ def my_form():
         #if flag == 0: 
         #    dataFeedback.append(dataOnce)
 
+        #appand in array new data
         dataFeedback.append(dataOnce)
         
     except ValueError:
@@ -53,4 +57,5 @@ def my_form():
     with open('feedbackFile.json', 'w') as outfile:
         json.dump(dataFeedback, outfile)
 
+    #Open in another page current page with fixed port number
     webbrowser.open("http://localhost:64468/feedback")

@@ -1,14 +1,19 @@
 % rebase('layout.tpl', title='Feedback', year=year)
 
+<!--JS code-->
 <script>
+//Function for save number of smile-image
+//and active or disactive stars-images
 function saveIcon(iconValue){
+    //assign input number of smile-image
     document.getElementById("IconCount").value= iconValue;
+
     //var image = document.getElementById("imageStars");
     //var source = image.src;
     //window.open(source);
 
+    //active or disactive stars-images
     document.getElementById("imageStars0").style.display = "none";
-
     switch (iconValue){
        case 1:
         document.getElementById("imageStars1").style.display = "block";
@@ -50,6 +55,7 @@ function saveIcon(iconValue){
     //alert(fff);
 }
 
+//function for disable stars-images without 0 stars
 function hideImg(){
     document.getElementById("imageStars1").style.display = "none";
     document.getElementById("imageStars2").style.display = "none";
@@ -59,45 +65,68 @@ function hideImg(){
 }
 </script>
 
-<!-- добавляем текст рядом с кнопкои-->
+<!--Title of page-->
 <hAU1>Feedback<br></hAU1>
-<!--разделитель на абзацы-->
+
+<!--Separate line-->
 <hr>
 
-<!--шапка страницы-->
+<!--Form for popup window-->
 <div >
+    <!--Label for popup window-->
     <pAU>What are you think about us?<br></pAU>
-    <!-- добавляем кнопку-->
+    <!--Button for popup window-->
     <a href="#popup1" class="buttonAU1"  onclick="hideImg()" >Write now</a>
 </div>
 
+<!--Separate line-->
 <hr>
+
+<!--Empty line-->
 <p><br></p>
 
-<!--mas.reverse()  random.uniform(0,1)-->
+<!--Python code-->
+<!--Import libries-->
 %import json
 %import random
+
+<!--Initialization array for all information-->
 %dataFeedback = []
 
+<!--Open file and load its data to array-->
 %with open('feedbackFile.json') as jsonFile:
     %dataFeedback=json.load(jsonFile)
 
+<!--Reverse array-->
 %dataFeedback.reverse()
 
+<!--Out put data  from array-->
 %for i in range(len(dataFeedback)):
+    <!--Generation random-->
     %roundImageUser=random.randint(1,5)
+
+    <!--Load random user image-->
     <img class="circular--portraitV" src = "static\images\au\{{roundImageUser}}.png">
+
+    <!--Load stars-->
     <img src = "static\images\feedback\{{(dataFeedback[i])[4]}}_stars.png" width="200">
+
+    <!--Load surname, name, feedback, phone and date in container-->
     <bodyTextAu>
         <conteinerS>
+            <!--Container for surname, name-->
             <separateS>
                 <b>
                     {{(dataFeedback[i])[2]}} {{(dataFeedback[i])[1]}}
                 </b>
             </separateS>
-                <delimeterS></delimeterS> 
-                <delimeterS></delimeterS>
-                <delimeterS></delimeterS>
+
+            <!--Empty columns-->
+            <delimeterS></delimeterS> 
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+
+            <!--Container for phone-->
             <separateS>
                 <b>
                     {{(dataFeedback[i])[0]}}
@@ -105,11 +134,13 @@ function hideImg(){
             </separateS>
         </conteinerS>
 
+        <!--Print feedback-->
         <br>
         <p>{{(dataFeedback[i])[3]}}</p>    
         <br>
 
         <conteinerS>
+            <!--Empty columns-->
             <delimeterS></delimeterS> 
             <delimeterS></delimeterS>
             <delimeterS></delimeterS>
@@ -121,6 +152,8 @@ function hideImg(){
             <delimeterS></delimeterS>
             <delimeterS></delimeterS>
             <delimeterS></delimeterS>
+
+            <!--Print date-->
             <separateS>
                 <b>
                     {{(dataFeedback[i])[5]}}
@@ -132,20 +165,20 @@ function hideImg(){
 %end
 
 
-<!--Форма для ввода информации-->
+<!--Notification form for post-button-->
 <form action="/feedback" method="post">
-    <!--Первое сплывающее окно-->
+    <!--Methon overload-->
     <div id="popup1" class="overlay">
+        <!--Pop up window-->
 	    <div class="popup">
-            <!--заговок окна-->
+            <!--All anthoer methods-->
 		        <pAU>Leave feedback</pAU>
-                <!--разделитель на абзацы-->
                 <hr>
 		        <a class="close" href="#">x</a>
 		        <div class="content">
                 <!--five elements of smiles in leave feedback-->
                 <conteinerA>
-                <!--пустой столбец-->
+                <!--Empty columns-->
                     <delimeterS></delimeterS>
                     <delimeterS></delimeterS>
                     <!--first smile-->
@@ -180,7 +213,7 @@ function hideImg(){
                     </newsonthesidesA>
                 </conteinerA>
 
-                <!--Image for raiting in feedback writing-->
+                <!--Images for raiting in feedback writing-->
                 <img class="circular--portraitA" src = "static\images\feedback\0stars.png" width="200" id="imageStars0">
                 <img class="circular--portraitA" src = "static\images\feedback\1stars.png" width="200" id="imageStars1">
                 <img class="circular--portraitA" src = "static\images\feedback\2stars.png" width="200" id="imageStars2">
@@ -188,33 +221,33 @@ function hideImg(){
                 <img class="circular--portraitA" src = "static\images\feedback\4stars.png" width="200" id="imageStars4">
                 <img class="circular--portraitA" src = "static\images\feedback\5stars.png" width="200" id="imageStars5">
 
-                <!--контейнер-->
+                <!--Another container in method-->
                 <conteinerS>
-                    <!--пустой столбец-->
+                    <!--Empty columns--->
                     <delimeterS></delimeterS>
-                    <!--делим на три столбца-->
+                    <!--Block for users name-->
                     <separateS>
-                        <!--feeld name-->
+                        <!--field name-->
                         <bodyTextAu>Enter name: <br>
                         <input type="text" size="15" name="NAME" placeholder="Your name" minlength = "5" maxlength = "20" required></bodyTextAu> 
                     </separateS>
-                    <!--пустой столбец-->
+                    <!--Empty columns--->
                     <delimeterS></delimeterS>
-                    <!--третий столбец-->
+                    <!--Block for users surname-->
                     <separateS>
-                        <!--feeld surname-->
+                        <!--field surname-->
                         <bodyTextAu>Enter surname:<br>
                         <input type="text" size="40" name="SURNAME" placeholder="Your surname" minlength = "5" maxlength = "25" required></bodyTextAu><br><br>
                     </separateS>
                 </conteinerS>
 
-                <!--контейнер-->
+                <!--Another container-->
                 <conteinerS>
-                    <!--пустой столбец-->
+                    <!--Empty columns-->
                     <delimeterS></delimeterS>
-                    <!--делим на три столбца-->
+                    <!--Block for phone with pattern-->
                     <separateS>
-                        <!--feeld phone-->
+                        <!--field phone-->
                         <bodyTextAu>Enter phone number: 
                         <input type="text" size="40" name="PHONE" placeholder="Your phone" minlength = "5" maxlength = "25" 
                         pattern="[+][7][(][0-9]{3}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}$" 
@@ -222,18 +255,18 @@ function hideImg(){
                         oninput="this.setCustomValidity('')"></bodyTextAu><br><br><br>
                         <p><input class="A" type="text" id="IconCount" name="IconCount"></p>
                     </separateS>
-                    <!--пустой столбец-->
+                    <!--Empty columns-->
                     <delimeterS></delimeterS>
-                    <!--третий столбец-->
+                    <!--Block for feedback-->
                     <separateS>
-                        <!--feeld feedback-->
+                        <!--field feedback-->
                         <bodyTextAu>Enter feedback: 
                         <textarea rows="4" minlength = "1" cols="100" name="FEEDBACK" placeholder="Your feedback" required></textarea></bodyTextAu><br><br>
                     </separateS>
                 </conteinerS>
-                <!--разделитель на абзацы-->
+                <!--Separate line-->
                 <hr>
-                <!-- добавляем кнопку-->
+                <!--Button for publish-->
                 <input type="submit"  class="buttonAU1" value="Publish">
                 </bodyTextAu>
 	    </div>
