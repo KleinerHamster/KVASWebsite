@@ -40,7 +40,7 @@
             <!--третий столбец-->
             <separateS>
                 <!-- добавляем текстовое поле для даты публицкации статьи-->
-                <bodyTextAu><input type="date" size="50" id="email" name="name" placeholder="Date of publish" required oninvalid="this.setCustomValidity('Enter your email!')" 
+                <bodyTextAu><input type="date" size="50" id="email" name="date" placeholder="Date of publish" required oninvalid="this.setCustomValidity('Enter your email!')" 
                 oninput="this.setCustomValidity('')"><br><br></bodyTextAu>
                 <!-- кнопка для отправки-->
                 <input type="submit" class="buttonAU" value="Send">

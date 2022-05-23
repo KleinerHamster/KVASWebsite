@@ -21,6 +21,9 @@
     <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>
     </WebBrowserPort>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestRootDirectory>C:\Users\kamillabalaeva\Source\Repos\KVASWebsite\WebsiteKVAS\unitests\kama\.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +47,12 @@
     <Compile Include="our_partners_s.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="unitests\kama\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unitests\kama\test_date.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="useful_articles_k.py">
       <SubType>Code</SubType>
     </Compile>
@@ -53,6 +62,7 @@
     <Compile Include="routes.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="unitests\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
@@ -62,6 +72,10 @@
     <Folder Include="static\images\lastnews\" />
     <Folder Include="static\images\thingworx\" />
     <Folder Include="static\scripts\" />
+    <Folder Include="unitests\ann\" />
+    <Folder Include="unitests\curly_sue\" />
+    <Folder Include="unitests\kama\" />
+    <Folder Include="unitests\vi\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
