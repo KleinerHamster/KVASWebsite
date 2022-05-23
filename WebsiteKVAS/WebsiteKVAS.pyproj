@@ -47,9 +47,6 @@
     <Compile Include="our_partners_s.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="static\images\our_partners\module1.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="unitests\ann\PhoneFeedback.py">
       <SubType>Code</SubType>
     </Compile>
@@ -153,8 +150,13 @@
     <Content Include="static\images\lastnews\mynew_5.png" />
     <Content Include="static\images\lastnews\mynew_6.png" />
     <Content Include="static\images\lastnews\newsHeader.png" />
-    <Content Include="static\images\our_partners\7imgp.jpg" />
-    <Content Include="static\images\our_partners\8imgp.jpg" />
+    <Content Include="static\images\our_partners\1img.jpg" />
+    <Content Include="static\images\our_partners\2img.jpg" />
+    <Content Include="static\images\our_partners\3img.jpg" />
+    <Content Include="static\images\our_partners\4img.jpg" />
+    <Content Include="static\images\our_partners\5img.jpg" />
+    <Content Include="static\images\our_partners\6img.jpg" />
+    <Content Include="static\images\our_partners\7img.jpg" />
     <Content Include="static\images\thingworx\b1.png" />
     <Content Include="static\images\thingworx\b2.png" />
     <Content Include="static\images\thingworx\b3.png" />
