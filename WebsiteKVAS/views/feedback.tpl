@@ -4,7 +4,9 @@
 function saveIcon(iconValue){
     document.getElementById("IconCount").value= iconValue;
 
-    //alert(iconValue);
+    //var fff="static\images\feedback\3_stars.png"
+    //document.getElementById("imageStars").src = "static\images\feedback\3_stars.png";
+    //alert(fff);
 }
 </script>
 
@@ -129,7 +131,7 @@ function saveIcon(iconValue){
                     </newsonthesidesA>
                 </conteinerA>
 
-                //Image for raiting in feedback writing
+                <!--Image for raiting in feedback writing-->
                 <img class="circular--portraitA" src = "static\images\feedback\1_stars.png" width="200" id="imageStars">
 
                 <!--контейнер-->

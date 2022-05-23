@@ -10,7 +10,7 @@
     <StartupFile>app.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
+    <WorkingDirectory>C:\Users\Anya\source\repos\KVASWebsite\WebsiteKVAS\unitests\ann\.</WorkingDirectory>
     <LaunchProvider>Web launcher</LaunchProvider>
     <OutputPath>.</OutputPath>
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
@@ -22,7 +22,7 @@
     <WebBrowserPort>64468</WebBrowserPort>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
-    <UnitTestRootDirectory>.</UnitTestRootDirectory>
+    <UnitTestRootDirectory>C:\Users\Anya\source\repos\KVASWebsite\WebsiteKVAS\unitests\ann\.</UnitTestRootDirectory>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -45,6 +45,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="our_partners_s.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unitests\ann\PhoneFeedback.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unitests\ann\test_FalsePhoneFeedback.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unitests\ann\test_TruePhoneFeedback.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unitests\kama\module1.py">
