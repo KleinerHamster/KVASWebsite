@@ -49,7 +49,11 @@ function saveIcon(iconValue){
         </newsinthecenterA>
     </conteinerA>
     <p>{{(dataFeedback[i])[3]}}</p>
-    <p>{{(dataFeedback[i])[4]}}</p>
+
+    %if((dataFeedback[i])[4] == "2"):
+    <img class="circular--portrait" src = "static\images\feedback\1_stars_smile.png" title="Awful">
+    <p>{{(dataFeedback[i])[4] == "2"}}</p>
+    <p>DATAIcon: {{(dataFeedback[i])[4]}}</p>
     <p>{{(dataFeedback[i])[5]}}</p>
 %end
 <hr>
