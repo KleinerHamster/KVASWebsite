@@ -104,7 +104,10 @@ function saveIcon(iconValue){
                     <separateS>
                         <!--feeld phone-->
                         <bodyTextAu>Enter phone: 
-                        <input type="text" size="40" name="Phone" placeholder="Your phone" minlength = "5" maxlength = "25" required></bodyTextAu>   
+                        <input type="text" size="40" name="Phone" placeholder="Your phone" minlength = "5" maxlength = "25" 
+                        pattern="[+][7][(][0-9]{3}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}$" 
+                        required oninvalid="this.setCustomValidity('Enter your phone in format +7(xxx) xxx-xx-xx')" 
+                        oninput="this.setCustomValidity('')"></bodyTextAu>   
                     </separateS>
                     <!--пустой столбец-->
                     <delimeterS></delimeterS>
@@ -112,7 +115,7 @@ function saveIcon(iconValue){
                     <separateS>
                         <!--feeld feedback-->
                         <bodyTextAu>Enter feedback: 
-                        <textarea rows="4" cols="100" name="QUEST" placeholder="Your Feedback" required></textarea></bodyTextAu><br><br>
+                        <textarea rows="4" minlength = "1" cols="100" name="FEEDBACK" placeholder="Enter feedback" required></textarea></bodyTextAu><br><br>
                     </separateS>
                 </conteinerS>
                 <!--разделитель на абзацы-->
@@ -120,9 +123,6 @@ function saveIcon(iconValue){
                 <!-- добавляем кнопку-->
                 <input type="submit"  class="buttonAU1" value="Send">
                 </bodyTextAu>
-                
-                <p><input type="text" size="50" name="ADRESS" placeholder="Your email" minlength = "5" maxlength = "31"
-                pattern="([a-z0-9._%+-]{5,31})+@[a-z0-9.-]+\.[a-z]{2,}$" required></p>
                 
                 <p><input type="text" size="10" id="IconCount" name="IconCount"></p>
             </form>

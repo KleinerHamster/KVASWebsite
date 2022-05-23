@@ -8,4 +8,5 @@ import re
 @post('/feedback', method='post')
 def my_form():
     icon=request.forms['IconCount']
+    mail = request.forms.get('ADRESS')
     return "<p>"+icon+"</p>"
