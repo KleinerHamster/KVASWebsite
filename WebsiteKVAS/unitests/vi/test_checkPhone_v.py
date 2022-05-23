@@ -11,7 +11,7 @@ def check_phone(phone):#finction of check phone
 
 class Test_test_phone(unittest.TestCase):
     def test_valid_phone_check(self):
-        list_mail_cor=["+7(922) 187-25-90","+7(819) 354-29-88", "+7(123) 456-123-98", "+7(921) 345-56-87", "+7(919) 354-123-65"]
+        list_mail_cor=["+7(922) 187-25-90","+7(819) 354-29-88", "+7(123) 456-12-98", "+7(921) 345-56-87", "+7(919) 354-12-65"]
         for i in list_mail_cor:
             self.assertTrue(check_phone(i))
 

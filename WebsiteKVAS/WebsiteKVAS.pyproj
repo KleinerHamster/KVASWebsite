@@ -10,7 +10,7 @@
     <StartupFile>app.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>C:\Users\Anya\source\repos\KVASWebsite\WebsiteKVAS\unitests\ann\.</WorkingDirectory>
+    <WorkingDirectory>C:\Users\Anya\source\repos\KVASWebsite\WebsiteKVAS\unitests\vi\.</WorkingDirectory>
     <LaunchProvider>Web launcher</LaunchProvider>
     <OutputPath>.</OutputPath>
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
@@ -22,7 +22,7 @@
     <WebBrowserPort>64468</WebBrowserPort>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
-    <UnitTestRootDirectory>C:\Users\Anya\source\repos\KVASWebsite\WebsiteKVAS\unitests\ann\.</UnitTestRootDirectory>
+    <UnitTestRootDirectory>C:\Users\Anya\source\repos\KVASWebsite\WebsiteKVAS\unitests\vi\.</UnitTestRootDirectory>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
