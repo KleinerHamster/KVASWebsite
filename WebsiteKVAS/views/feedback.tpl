@@ -25,7 +25,7 @@ function saveIcon(iconValue){
 </div>
 
 <!--Форма для ввода информации-->
-<form action="/activeUsers" method="post">
+<form action="/feedback" method="post">
     <!--Первое сплывающее окно-->
     <div id="popup1" class="overlay">
 	    <div class="popup">
