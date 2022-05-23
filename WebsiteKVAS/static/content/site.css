@@ -606,3 +606,26 @@ pAU1 {
         width: 100%;
         height: auto;
     }
+
+table { /*стиль таблицы*/
+    /*стиль границ*/
+    border: 2px solid #954860;
+    border-collapse: collapse;
+}
+
+.table-style {
+    width: 100%;
+}
+
+th, td {
+    padding: 5px; /*¬нутрение отступы*/
+    font-family: 'Georgia',Georgia, serif; /*Ўрифт*/
+    font-size: 16pt; /*√егель шрифта*/
+    color: black; /*÷вет шрифта*/
+    border: solid 3px #954860;
+    text-align: center; /*текст по центру*/
+}
+
+th {
+    background-color: #bbb2b5; /*÷вет заднего фона*/
+}

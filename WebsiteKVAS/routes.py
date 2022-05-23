@@ -71,15 +71,15 @@ def contact():
 
     mas=[]
  
-    
     with open('sofi.json') as j:
         mas=json.load(j)
     mas.reverse()
+
     for i in range(0,len(mas)):
-        df = df.append({'':'<img src="static\images\curly_sue\7imgp.jpg"/>','Company name':mas[i][1],'Description':mas[i][2],'Contact phone number':mas[i][3],
+        df = df.append({'':"<img src="+mas[i][0]+" width=200/>",'Company name':mas[i][1],'Description':mas[i][2],'Contact phone number':mas[i][3],
                             'Learn more':mas[i][4]}, ignore_index=True)
     
-           
+    #<img src="static\images\curly_sue\7imgp.jpg"/>
     html=df.to_html(render_links=True,escape=False)
 
     return dict(
