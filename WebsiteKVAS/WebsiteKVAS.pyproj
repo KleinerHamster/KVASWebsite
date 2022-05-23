@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>WebsiteKVAS</Name>
     <RootNamespace>WebsiteKVAS</RootNamespace>
-    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>64468</WebBrowserPort>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
@@ -45,9 +45,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="our_partners_s.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="static\images\feedback\module1.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unitests\kama\module1.py">
@@ -111,6 +108,17 @@
     <Content Include="static\images\blockchain\ibm.jpg" />
     <Content Include="static\images\blockchain\preview - case.jpg" />
     <Content Include="static\images\blockchain\udemy.png" />
+    <Content Include="static\images\feedback\0_stars.png" />
+    <Content Include="static\images\feedback\1_stars.png" />
+    <Content Include="static\images\feedback\1_stars_smile.png" />
+    <Content Include="static\images\feedback\2_stars.png" />
+    <Content Include="static\images\feedback\2_stars_smile.png" />
+    <Content Include="static\images\feedback\3_stars.png" />
+    <Content Include="static\images\feedback\3_stars_smile.png" />
+    <Content Include="static\images\feedback\4_stars.png" />
+    <Content Include="static\images\feedback\4_stars_smile.png" />
+    <Content Include="static\images\feedback\5_stars.png" />
+    <Content Include="static\images\feedback\5_stars_smile.png" />
     <Content Include="static\images\homepage\homeIMG.png" />
     <Content Include="static\images\homepage\imperalCollege.png" />
     <Content Include="static\images\homepage\oxford.png" />

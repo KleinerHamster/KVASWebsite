@@ -32,31 +32,52 @@ function saveIcon(iconValue){
 
 %dataFeedback.reverse()
 
-%ddd=random.randint(0,4)
-{{ddd}}
-
 %for i in range(len(dataFeedback)):
-    <b>{{i}}:</b>
-    <conteinerA>
-        <newsonthesidesA>
-            <p>{{(dataFeedback[i])[0]}}</p>
-        </newsonthesidesA>
-        <newsinthecenterA>
-            <p>{{(dataFeedback[i])[1]}}</p>
-        </newsinthecenterA>
-        <newsinthecenterA>
-            <p>{{(dataFeedback[i])[2]}}</p>
-        </newsinthecenterA>
-    </conteinerA>
-    <p>{{(dataFeedback[i])[3]}}</p>
+    %roundImageUser=random.randint(1,5)
+    <img class="circular--portraitV" src = "static\images\au\{{roundImageUser}}.png" width="200">
+    <img src = "static\images\feedback\{{(dataFeedback[i])[4]}}_stars.png" width="200">
+    <bodyTextAu>
+        <conteinerS>
+            <separateS>
+                <b>
+                    {{(dataFeedback[i])[2]}} {{(dataFeedback[i])[1]}}
+                </b>
+            </separateS>
+                <delimeterS></delimeterS> 
+                <delimeterS></delimeterS>
+                <delimeterS></delimeterS>
+            <separateS>
+                <b>
+                    {{(dataFeedback[i])[0]}}
+                </b>
+            </separateS>
+        </conteinerS>
 
-    %if((dataFeedback[i])[4] == "2"):
-    <img class="circular--portrait" src = "static\images\feedback\1_stars_smile.png" title="Awful">
-    <p>{{(dataFeedback[i])[4] == "2"}}</p>
-    <p>DATAIcon: {{(dataFeedback[i])[4]}}</p>
-    <p>{{(dataFeedback[i])[5]}}</p>
+        <br>
+        <p>{{(dataFeedback[i])[3]}}</p>    
+        <br>
+
+        <conteinerS>
+            <delimeterS></delimeterS> 
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+            <delimeterS></delimeterS>
+            <separateS>
+                <b>
+                    {{(dataFeedback[i])[5]}}
+                </b>
+            </separateS>
+        </conteinerS>
+    </bodyTextAu>
+    <hr>
 %end
-<hr>
 
 
 <!--Форма для ввода информации-->
