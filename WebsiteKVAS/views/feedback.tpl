@@ -66,7 +66,7 @@ function hideImg(){
 
 <!--шапка страницы-->
 <div >
-    <pAU>Write about us<br></pAU>
+    <pAU>What are you think about us?<br></pAU>
     <!-- добавляем кнопку-->
     <a href="#popup1" class="buttonAU1"  onclick="hideImg()" >Write now</a>
 </div>
@@ -228,7 +228,7 @@ function hideImg(){
                     <separateS>
                         <!--feeld feedback-->
                         <bodyTextAu>Enter feedback: 
-                        <textarea rows="4" minlength = "1" cols="100" name="FEEDBACK" placeholder="Enter feedback" required></textarea></bodyTextAu><br><br>
+                        <textarea rows="4" minlength = "1" cols="100" name="FEEDBACK" placeholder="Your feedback" required></textarea></bodyTextAu><br><br>
                     </separateS>
                 </conteinerS>
                 <!--разделитель на абзацы-->
