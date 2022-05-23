@@ -22,7 +22,7 @@
     <WebBrowserPort>64468</WebBrowserPort>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
-    <UnitTestRootDirectory>.</UnitTestRootDirectory>
+    <UnitTestRootDirectory>D:\Учеба\Отчеты\6 семестр\МДК 02.02 Опалева\ПР1\KVAS\WebsiteKVAS\unitests\curly_sue\.</UnitTestRootDirectory>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -54,6 +54,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unitests\ann\test_TruePhoneFeedback.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unitests\curly_sue\check_phone.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="unitests\curly_sue\test_checkPhone.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="unitests\kama\module1.py">
