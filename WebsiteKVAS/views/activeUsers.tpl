@@ -16,7 +16,7 @@
     <p><br></p>
 </div>
 <!--Форма для ввода информации-->
-<form action="/activeUsers" method="post">
+<form action="/feedback" method="post">
     <!--Первое сплывающее окно-->
     <div id="popup1" class="overlay">
 	    <div class="popup">
@@ -68,7 +68,8 @@
                 <!--разделитель на абзацы-->
                 <hr>
                 <!-- добавляем кнопку-->
-                <input type="submit"  class="buttonAU1" value="Load">
+                <input type="submit"  class="buttonAU1" value="Load"
+                >
                 </bodyTextAu>
 		    </div>
 	    </div>
