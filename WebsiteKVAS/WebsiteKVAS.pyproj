@@ -196,6 +196,7 @@
     <Content Include="views\ourPartners.tpl">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\template_for_mistks.tpl" />
     <Content Include="views\thingworx.tpl" />
     <Content Include="views\homepage.tpl" />
     <Content Include="views\lastnews.tpl" />
