@@ -1,45 +1,61 @@
-from bottle import post, request
+from bottle import post, request, template
 import re 
 import pdb
 import json
-date=r'(?<!\d)(?:0?[1-9]|[12][0-9]|3[01])-(?:0?[1-9]|1[0-2])-(?:19[0-9][0-9]|20[01][0-9])(?!\d)'
-def check(date):
-    if (re.fullmatch(date,date)): #fullmatch  - полностью вся входящая строка (findall, sub, finditer, etc.)
-        return 1
+import  datetime as date_time#loading libraries
+from datetime import date as date_t
+date_regular=r'(19[9][0-9]|20[01][0-9]|20[2][0-2])-(0?[1-9]|1[0-2])-(0?[1-9]|[12][0-9]|3[01])'#regular expression
+#function on the correct date format
+def check(mail):
+    if (re.fullmatch(date_regular, mail)):
+        return True
     else:
-        return 0
-dictionary={}
+        return False
+dictionary={}#creating a dictionary that will be written to a file
+#request processing
 @post('/usefulArticles', method='post')
 def k():
     dictionary={}
+    #getting data from the user
     name=request.forms.get('name')
     name_of_article=request.forms.get('name_of_article')
     article=request.forms.get('article')
-    date=request.forms.get('date')
-    #############
-    try:
-        with open('useful_articles.txt') as json_file:
-            dictionary = json.load(json_file)   
-    except:
-        pass    
-    if len(dictionary)==0: # в словаре ничего нет записываем ключ-значение
-        dictionary[name_of_article]=[name, article, date]
+    date_writing=request.forms.get('date')
+    #checking checking the correctness of the date format
+    if check( date_writing):
+        curdate=date_time.datetime.today()
+        if date_time.datetime.strptime(date_writing, '%Y-%m-%d') <= curdate:
+            try:
+                #opening a file for reading
+                with open('useful_articles.txt') as json_file:
+                    dictionary = json.load(json_file)   
+            except:
+                pass    
+            if len(dictionary)==0: # there is nothing in the dictionary, we write down the key-value
+                dictionary[name_of_article]=[name, article, date_writing]
+            else:#if the document is not empty
+                for key in  dictionary.keys():
+                    if name_of_article==key:
+                        replay_txt= "An article with the same name already exists, please come up with a new name!"
+                        return template('template_for_mistks', replay_txt=replay_txt,button_back='/usefulArticles')
+                #adding new values to the dictionary
+                dictionary[name_of_article]=[]
+                dictionary[name_of_article].append(name) 
+                dictionary[name_of_article].append(article)
+                dictionary[name_of_article].append(date_writing)
+            with open('useful_articles.txt', 'w') as outfile:#opening a file for recording
+                json.dump(dictionary, outfile)
+            replay_txt="Your article has been published, thanks! To read it, return to the same page!"
+            try:
+                return template('template_for_mistks', replay_txt=replay_txt,button_back='/usefulArticles')
+            except:
+                pass
+            #output of the corresponding message
+        else:
+             replay_txt="The date of writing the article cannot be later than the current one."
+             return template('template_for_mistks', replay_txt=replay_txt,button_back='/usefulArticles')
+
+#output of the corresponding message
     else:
-        for key in  dictionary.keys():
-            if name_of_article==key:
-                return "An article with the same name already exists, please come up with a new name!"
-        dictionary[name_of_article]=[]
-        dictionary[name_of_article].append(name) 
-        dictionary[name_of_article].append(article)
-        dictionary[name_of_article].append(date)
-    with open('useful_articles.txt', 'w') as outfile:#открытие файла
-        json.dump(dictionary, outfile)
-    return "YES!"
-def count_of_dictionary():
-    import re 
-    import pdb
-    import json
-    dictionary={} 
-    with open('useful_articles.txt') as json_file:
-        dictionary = json.load(json_file)  
-    return dictionary
+   
+        return template('template_for_mistks', replay_txt=replay_txt,button_back='/usefulArticles')
