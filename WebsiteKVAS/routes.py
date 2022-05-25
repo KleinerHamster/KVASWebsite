@@ -99,3 +99,11 @@ def contact():
         title='activeUsers',
         year=datetime.now().year
     )
+@route('/template_for_mistks')
+@view('template_for_mistks')
+def about():
+    """Renders the about page."""
+    return dict(
+        title='template_for_mistks',
+        year=datetime.now().year
+    )
