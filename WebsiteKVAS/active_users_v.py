@@ -11,7 +11,7 @@ def active_user_page():
     phone = request.forms.get('phone')
     user = request.forms.get('you')
     dataUser = {}#array of active user
-    flag=0#flag for 
+    flag=0#flag for not new user
     if(checkPhone.check_phone(phone)):
         try:
             #loading a dictionary from file
@@ -23,8 +23,9 @@ def active_user_page():
         for i in dataUser:
             if phone in i:
                 flag=1
-        if flag:
+        if flag:#delete old information about user
             dataUser.pop(phone)
+        #add information
         dataUser[phone] = [name, lastname, user]
         #saving data to file
         with open('activeUserFile.json', 'w') as outfile:

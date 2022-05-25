@@ -611,10 +611,11 @@ table { /*стиль таблицы*/
     /*стиль границ*/
     border: 2px solid #954860;
     border-collapse: collapse;
+    width: 30%;
 }
 
 .table-style {
-    width: 100%;
+    width: 30%;
 }
 
 th, td {

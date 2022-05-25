@@ -1,72 +1,72 @@
 % rebase('layout.tpl', title='Active Users', year=year)
 
-<!--шапка страницы-->
 <div >
-    <!-- добавляем текст рядом с кнопкои-->
+    <!--page title-->
     <hAU1>Our active users<br></hAU1>
-    <!--разделитель на абзацы-->
+    <!--split into paragraphs-->
     <hr>
+    <!--text near with button-->
     <pAU>Let's join with us<br></pAU>
-    <!-- добавляем кнопку-->
+    <!--adding button-->
     <a href="#popup1" class="buttonAU1">Start now</a>
-    
-    <!--разделитель на абзацы-->
+    <!--split into paragraphs-->
     <hr>
     <p><br></p>
 </div>
-<!--Форма для ввода информации-->
+
+<!--form for enter data-->
 <form action="/activeUsers" method="post">
-    <!--Первое сплывающее окно-->
+    <!--Popup-->
     <div id="popup1" class="overlay">
 	    <div class="popup">
-            <!--заговок окна-->
+            <!--popup title-->
 		    <pAU>Information about you</pAU>
-            <!--разделитель на абзацы-->
+            <!--split into paragraphs-->
             <hr>
 		    <a class="close" href="#">x</a>
 		    <div class="content">
-                <!--контейнер-->
+                <!--conteiner-->
                 <conteinerS>
-                    <!--пустой столбец-->
+                    <!--empty column-->
                     <delimeterS></delimeterS>
-                    <!--делим на три столбца-->
+                    <!--split on 3 column-->
                     <separateS>
-                        <!-- добавляем текстовое поле для имени-->
+                        <!--input for name-->
                         <bodyTextAu>Name:<br><input type="nameUser" size="50" id="nameUser" name="nameUser" placeholder="Your name" required oninvalid="this.setCustomValidity('Enter your name!')" 
                         oninput="this.setCustomValidity('')"></bodyTextAu>   
                     </separateS>
-                    <!--пустой столбец-->
+                    <!--empty column-->
                     <delimeterS></delimeterS>
-                    <!--третий столбец-->
+                    <!--third column-->
                     <separateS>
-                        <!-- добавляем текстовое поле для фамилии-->
+                        <!--input for lastname-->
                         <bodyTextAu>Lastname:<br><input type="lastnameUser" size="50" id="lastnameUser" name="lastnameUser" placeholder="Your lastname" required oninvalid="this.setCustomValidity('Enter your lastname!')" 
                         oninput="this.setCustomValidity('')"></bodyTextAu><br><br>
                     </separateS>
                 </conteinerS>
 
-                <!--контейнер-->
+                 <!--conteiner-->
                 <conteinerS>
-                    <!--пустой столбец-->
+                     <!--empty column-->
                     <delimeterS></delimeterS>
-                    <!--делим на три столбца-->
+                   <!--split on 3 column-->
                     <separateS>
-                        <!-- добавляем текстовое поле для для почты-->
+                         <!--input for phone-->
                         <bodyTextAu>Phone:<br><input type="phone" size="50" id="phone" name="phone" placeholder="Your phone" pattern="[+][7][(][0-9]{3}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}$" required oninvalid="this.setCustomValidity('Enter your phone in format +7(xxx) xxx-xx-xx')" 
                         oninput="this.setCustomValidity('')"></bodyTextAu>   
                     </separateS>
-                    <!--пустой столбец-->
+                     <!--empty column-->
                     <delimeterS></delimeterS>
-                    <!--третий столбец-->
-                    <separateS>
-                        <!-- добавляем текстовое поле для информации о себе-->
+                   <!--third column-->
+                   <separateS>
+                        <!--textare for information about yoursels-->
                         <bodyTextAu>About yourself: <textarea rows="2" cols="50" id="you" name="you" placeholder="About yourself" required oninvalid="this.setCustomValidity('Enter information about ypurself!')"
                         oninput="this.setCustomValidity('')"></textarea></bodyTextAu><br><br>
                     </separateS>
                 </conteinerS>
-                <!--разделитель на абзацы-->
+                <!--split into paragraphs-->
                 <hr>
-                <!-- добавляем кнопку-->
+                 <!--adding button-->
                 <input type="submit"  class="buttonAU1" value="Load"
                 >
                 </bodyTextAu>
@@ -74,7 +74,7 @@
 	    </div>
     </div>
 </form>
-
+<!--python code-->
 %import json
 %import random
 %dataUsers = {}
@@ -88,7 +88,7 @@
         <img class="circular--portraitVA" src = "static\images\au\1.png">
         <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
         <bodyTextAu>Phone: {{key}}<br>
-        About yoursels: {{res[key][2]}}
+        About yourself: {{res[key][2]}}
         </bodyTextAu>
         <hr>
         <br><br><br><br>
@@ -96,7 +96,7 @@
         <img class="circular--portraitVA" src = "static\images\au\2.png">
         <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
         <bodyTextAu>Phone: {{key}}<br>
-        About yoursels: {{res[key][2]}}
+        About yourself: {{res[key][2]}}
         </bodyTextAu>
         <hr>
         <br><br><br><br>
@@ -104,7 +104,7 @@
         <img class="circular--portraitVA" src = "static\images\au\3.png">
         <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
         <bodyTextAu>Phone: {{key}}<br>
-        About yoursels: {{res[key][2]}}
+        About yourself: {{res[key][2]}}
         </bodyTextAu>
         <hr>
         <br><br><br><br>
@@ -112,7 +112,7 @@
         <img class="circular--portraitVA" src = "static\images\au\4.png">
         <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
         <bodyTextAu>Phone: {{key}}<br>
-        About yoursels: {{res[key][2]}}
+        About yourself: {{res[key][2]}}
         </bodyTextAu>
         <hr>
         <br><br><br><br>
@@ -120,7 +120,7 @@
         <img class="circular--portraitVA" src = "static\images\au\5.png">
        <pAU1>{{res[key][0]}} {{res[key][1]}}</pAU1><br>
         <bodyTextAu>Phone: {{key}}<br>
-        About yoursels: {{res[key][2]}}
+        About yourself: {{res[key][2]}}
         </bodyTextAu>
         <hr>
         <br><br><br><br>
