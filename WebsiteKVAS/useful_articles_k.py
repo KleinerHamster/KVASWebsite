@@ -57,5 +57,5 @@ def k():
 
 #output of the corresponding message
     else:
-   
+        replay_txt="Incorrect value!"
         return template('template_for_mistks', replay_txt=replay_txt,button_back='/usefulArticles')
